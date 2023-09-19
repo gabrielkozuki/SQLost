@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'PressStart';
+    src: url('./assets/fonts/prstartk.ttf');
+}
+
+* {
+    font-family: 'PressStart';
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+html, body, #root, div {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}

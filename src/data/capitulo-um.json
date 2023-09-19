@@ -1,0 +1,16 @@
+[
+    {
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Olá! Meu nome é Mei e sou a protagonista dessa jornada. Prazer em conhecê-lo!",
+        "sprite": "rascunho-mei-faixa.png",
+        "background": "black-screen.png"
+    },
+    {
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Espero que goste!",
+        "sprite": "rascunho-cat.png",
+        "background": "black-screen.png"
+    }
+]
