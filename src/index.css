@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'PressStart';
-    src: url('./assets/fonts/prstartk.ttf');
-}
-
 * {
-    font-family: 'PressStart';
+    font-family: 'Press Start 2P', cursive;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;

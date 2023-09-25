@@ -14,5 +14,13 @@
         "sprite": "rascunho-cat.png",
         "background": "black-screen.png",
         "speed": 20
+    },
+    {
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Agora chega de papo furado. Vamos começar a trabalhar!",
+        "sprite": "rascunho-cat.png",
+        "background": "black-screen.png",
+        "speed": 20
     }
 ]

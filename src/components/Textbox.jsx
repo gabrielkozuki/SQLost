@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from 'react'
 import './Textbox.scss'
 import { Typewriter } from "./Typewriter";
 
 const Textbox = (props) => {
-    const data = props.data
     const flow = props.flow
-    const dialogue = Typewriter(data[flow].text, data[flow].speed)
-
-    useEffect(() => {
-        
-    }, [flow])
+    const data = props.data[flow]
+    const dialogue = Typewriter(data.text, data.speed)
 
     return (
         <div className='textbox'>
-            <p>{dialogue}</p>
+            <img className='sprite' src={'/sprites/' + data.sprite}></img>
+            <div className='baloon-text'>{dialogue}</div>
         </div>
     )
 }

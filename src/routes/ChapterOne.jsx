@@ -6,23 +6,29 @@ import Textbox from '../components/Textbox'
 
 const ChapterOne = () => {
 
-  const [flow, setFlow] = useState(0);
+	const [flow, setFlow] = useState(0);
 
-  const handleClick = () => {
-    if (flow < data.length -1) {
-      setFlow(flow + 1)
-    }
-    console.log(flow);
-  }
+	const handleClick = () => {
+		if (flow < data.length - 1) {
+			setFlow(flow + 1)
+		}
+		console.log(flow);
+	}
 
-  return (
-    <div className='chapter-one'>
-      <div className="wrapper">
-        <Textbox data={data} flow={flow} />
-        <button onClick={handleClick}>Avançar</button>
-      </div>
-    </div>
-  )
+	return (
+		<div className='chapter-one'>
+			<div className='wrapper'>
+				<div className="textbox-container">
+					<Textbox data={data} flow={flow} />
+					<button className='btn-continuar' onClick={handleClick}>Continuar</button>
+				</div>
+
+				<div className="editor-container">
+					<p>Editor SQL</p>
+				</div>
+			</div>
+		</div>
+	)
 }
 
 export default ChapterOne
