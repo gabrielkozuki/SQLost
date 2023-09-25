@@ -1,32 +1,24 @@
-import  { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-const useTypewriter = (text, speed = 50) => {
-  const [displayText, setDisplayText] = useState('');
+export function Typewriter(textToType, interKeyStrokeDurationInMs) {
+  const [currentPosition, setCurrentPosition] = useState(0);
+  const currentPositionRef = useRef(0);
 
   useEffect(() => {
-    setDisplayText('')
-    let i = 0;
-    const typingInterval = setInterval(() => {
-      if (i < text.length) {
-        setDisplayText(prevText => prevText + text.charAt(i));
-        i++;
-      } else {
-        clearInterval(typingInterval);
+    const intervalId = setInterval(() => {
+      console.log("interval");
+      setCurrentPosition((value) => value + 1);
+      currentPositionRef.current += 1;
+      if (currentPositionRef.current > textToType.length) {
+        clearInterval(intervalId);
       }
-    }, speed);
-
+    }, interKeyStrokeDurationInMs);
     return () => {
-      clearInterval(typingInterval);
+      clearInterval(intervalId);
+      currentPositionRef.current = 0;
+      setCurrentPosition(0);
     };
-  }, [text, speed]);
+  }, [interKeyStrokeDurationInMs, textToType]);
 
-  return displayText;
-};
-
-const Typewriter = ({ text, speed }) => {
-    const displayText = useTypewriter(text, speed);
-  
-    return <p>{displayText}</p>;
-  };
-  
-export default Typewriter;
+  return textToType.substring(0, currentPosition);
+}
