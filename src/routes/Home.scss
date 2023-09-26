@@ -4,9 +4,13 @@
     align-items: center;
     justify-content: center;
 
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
+
     h1 {
         font-size: 70px;
         margin-bottom: 140px;
+        text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
     }
 
     .button {

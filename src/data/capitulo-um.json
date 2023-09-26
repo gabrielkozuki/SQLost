@@ -2,25 +2,25 @@
     {
         "type": "dialogue",
         "name": "Mei",
-        "text": "Olá! Meu nome é Mei e sou a protagonista dessa jornada. Prazer em conhecê-lo! Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla b",
+        "text": "Olá, meu nome é Mei.",
         "sprite": "rascunho-mei-faixa.png",
-        "background": "black-screen.png",
+        "background": "d19f4050b314c23.png",
         "speed": 20
     },
     {
         "type": "dialogue",
         "name": "Neko",
-        "text": "Espero que goste!",
+        "text": "E eu sou Neko! Meow ~",
         "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "background": "d19f4050b314c23.png",
         "speed": 20
     },
     {
         "type": "dialogue",
         "name": "Neko",
-        "text": "Agora chega de papo furado. Vamos começar a trabalhar!",
+        "text": "Vamos praticar um pouco de SQL.",
         "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "background": "d19f4050b314c23.png",
         "speed": 20
     }
 ]

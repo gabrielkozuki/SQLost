@@ -5,9 +5,13 @@
     justify-content: center;
     max-height: 100%;
 
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
+
     h1 {
         font-size: 30px;
         margin-bottom: 90px;
+        text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
     }
 
     .row {

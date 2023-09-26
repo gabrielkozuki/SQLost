@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Editor.scss";
 import initSqlJs from "sql.js";
 import AceEditor from "react-ace";
@@ -43,45 +43,58 @@ export default function Editor({ script }) {
  * @param {{db: import("sql.js").Database}} props
  */
 function SQLRepl({ db }) {
-    const [error, setError] = useState(null);
     const [enableEditor, setEnableEditor] = useState(false);
     const [sql, setSql] = useState('');
     const [results, setResults] = useState([]);
+    const [consoleComponents, setConsoleComponents] = useState([]);
+    const bottomRef = useRef(null);
 
-    function exec(sql) {
+    async function exec(sql) {
         try {
-            setResults(db.exec(sql));
-            setError(null);
+            let res = db.exec(sql);
+            
+            let arr = consoleComponents;
+            res.map(({ columns, values }) => (
+                arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
+            ))
+
+            setConsoleComponents(arr)
+            setResults(res)
+
         } catch (err) {
-            setError(err);
+            let arr = consoleComponents;
+            arr.push(<p key={arr.length}>Erro: {err.message}</p>)
+
+            setConsoleComponents(arr)
             setResults([]);
         }
     }
+    
+    useEffect(() => {
+        bottomRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    }, [results]);
 
     return (
         <div className="editor">
-            <pre className="error">{(error || "").toString()}</pre>
-            <pre>
-                {
-                    results.map(({ columns, values }, i) => (
-                        <ResultsTable key={i} columns={columns} values={values} />
-                    ))
-                }
-            </pre>
+            <div className="console-result">
+                {consoleComponents.map(component => (
+                    component
+                ))}
+                <div style={{height: 0}} ref={bottomRef}></div>
+            </div>
 
             <AceEditor
                 mode="mysql"
                 theme="textmate"
-                width="480px"
+                width="520px"
                 height="280px"
-                fontSize={16}
+                fontSize={14}
                 highlightActiveLine={false}
                 orientation="below"
                 editorProps={{ $blockScrolling: true }}
                 readOnly={enableEditor}
                 className="editor-sql"
                 onChange={(e) => { setSql(e) }}
-                onInput={(e) => { e.key == 'Enter' ? exec(sql) : null }}
             />
             <button className="btn-executar" onClick={() => exec(sql)}>Executar</button>
         </div>

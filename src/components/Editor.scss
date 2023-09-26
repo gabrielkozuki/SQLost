@@ -5,9 +5,38 @@
 	height: auto;
 	margin-bottom: 20px;
 	margin-right: 30px;
+    font-size: 12px;
+
+    .console-result {
+        width: 480px;
+        height:400px;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: auto;
+        margin-bottom: 30px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 11px;
+
+        text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: white;
+        }
+        &::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        &::-webkit-scrollbar-corner {
+            background: rgba(0, 0, 0, 0.3);
+        }
+    }
 
     .editor-sql {
         font-family: "Press Start 2P", cursive !important;
+        line-height: 1.5rem !important;
 
         .ace_scrollbar-v, .ace_scrollbar-h {
             &::-webkit-scrollbar {
@@ -46,27 +75,31 @@
     }
 
     table {
-        border: 1px solid #1c6ea4;
-        background-color: #eeeeee;
-        width: 40%;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        width: 70%;
         margin: 1.5em auto;
-        text-align: left;
+        text-align: center;
         border-collapse: collapse;
-        text-align: right;
     }
 
     thead {
-        font-weight: bold;
         text-align: center;
-        border: 2px solid #999;
+        border: 2px solid rgb(255, 255, 255);
+
+        td, tr {
+            height: 25px;
+            border: 2px solid white;
+        }
     }
 
-    th,
-    td {
-        border: 1px solid #aaa;
+    td, tr {
+        height: 25px;
+        border: 1px solid white;
     }
 
     .error {
-        color: #922;
+        color: white;
     }
 }
