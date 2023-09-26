@@ -2,7 +2,7 @@
     {
         "type": "dialogue",
         "name": "Mei",
-        "text": "Olá! Meu nome é Mei e sou a protagonista dessa jornada. Prazer em conhecê-lo!",
+        "text": "Olá! Meu nome é Mei e sou a protagonista dessa jornada. Prazer em conhecê-lo! Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla b",
         "sprite": "rascunho-mei-faixa.png",
         "background": "black-screen.png",
         "speed": 20

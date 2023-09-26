@@ -3,6 +3,7 @@ import './ChapterOne.scss'
 import data from '../data/capitulo-um.json';
 
 import Textbox from '../components/Textbox'
+import Editor from '../components/Editor'
 
 const ChapterOne = () => {
 
@@ -24,7 +25,7 @@ const ChapterOne = () => {
 				</div>
 
 				<div className="editor-container">
-					<p>Editor SQL</p>
+					<Editor />
 				</div>
 			</div>
 		</div>
