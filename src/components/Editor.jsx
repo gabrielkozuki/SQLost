@@ -7,12 +7,22 @@ import "ace-builds/src-noconflict/mode-mysql";
 import "ace-builds/src-noconflict/theme-textmate";
 import "ace-builds/src-noconflict/ext-language_tools";
 
-export default function Editor() {
+export default function Editor({ script }) {
     const [db, setDb] = useState(null);
     const [error, setError] = useState(null);
 
+    const runScriptDatabase = async (script) => {
+        try {
+            await db.run(script);
+        } catch (err) {
+            // console.log("Error runScriptDatabase: " + err);
+        }
+    }
+
+    runScriptDatabase(script);
+
     useEffect(() => {
-        const createSQL = async () => {
+        const createDatabase = async () => {
             try {
                 const SQL = await initSqlJs({ locateFile: (file) => `https://sql.js.org/dist/${file}` });
                 setDb(new SQL.Database());
@@ -21,21 +31,8 @@ export default function Editor() {
             }
         }
 
-        createSQL();
+        createDatabase();
     }, []);
-
-    let script = `
-        CREATE TABLE users(id int, nome varchar(25));
-        INSERT INTO users VALUES (0, 'Gabriel');
-        INSERT INTO users VALUES (1, 'Alice');
-        INSERT INTO users VALUES (2, 'Júlio');
-        INSERT INTO users VALUES (3, 'Felipe');
-        INSERT INTO users VALUES (4, 'Sarah');
-        INSERT INTO users VALUES (5, 'Sophia');
-    `;
-    if (db) {
-        db.run(script);
-    }
 
     if (error) return <pre>{error.toString()}</pre>;
     else return <SQLRepl db={db} />;
