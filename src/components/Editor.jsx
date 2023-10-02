@@ -7,9 +7,8 @@ import "ace-builds/src-noconflict/mode-mysql";
 import "ace-builds/src-noconflict/theme-textmate";
 import "ace-builds/src-noconflict/ext-language_tools";
 
-export default function Editor({ script }) {
+const Editor = ({ script, type, consoleComponents, setConsoleComponents, handleExercise }) => {
     const [db, setDb] = useState(null);
-    const [error, setError] = useState(null);
 
     const runScriptDatabase = async (script) => {
         try {
@@ -34,40 +33,39 @@ export default function Editor({ script }) {
         createDatabase();
     }, []);
 
-    if (error) return <pre>{error.toString()}</pre>;
-    else return <SQLRepl db={db} />;
+    return <SQLRepl db={db} type={type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} />;
 }
 
-/**
- * A simple SQL read-eval-print-loop
- * @param {{db: import("sql.js").Database}} props
- */
-function SQLRepl({ db }) {
+const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExercise }) => {
     const [enableEditor, setEnableEditor] = useState(false);
     const [sql, setSql] = useState('');
     const [results, setResults] = useState([]);
-    const [consoleComponents, setConsoleComponents] = useState([]);
     const bottomRef = useRef(null);
 
-    async function exec(sql) {
+    function exec(sql) {
+
+        // tratar comandos invalidos
+        
+        let arr = consoleComponents;
+
         try {
             let res = db.exec(sql);
             
-            let arr = consoleComponents;
             res.map(({ columns, values }) => (
                 arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
             ))
 
-            setConsoleComponents(arr)
-            setResults(res)
+            setResults(res);
+            handleExercise(res);
 
         } catch (err) {
-            let arr = consoleComponents;
-            arr.push(<p key={arr.length}>Erro: {err.message}</p>)
+            let error_msg = <p key={arr.length}>Erro: {err.message}</p>
 
-            setConsoleComponents(arr)
-            setResults([]);
+            arr.push(error_msg);
+            setResults(error_msg);
+            handleExercise(error_msg);
         }
+        
     }
     
     useEffect(() => {
@@ -96,17 +94,12 @@ function SQLRepl({ db }) {
                 className="editor-sql"
                 onChange={(e) => { setSql(e) }}
             />
-            <button className="btn-executar" onClick={() => exec(sql)}>Executar</button>
+            <button className="btn-executar" onClick={() => type === 'exercise' ? exec(sql) : null} disabled={type !== 'exercise'} >Executar</button>
         </div>
     );
 }
 
-/**
- * Renders a single value of the array returned by db.exec(...) as a table
- * @param {import("sql.js").QueryExecResult} props
- */
-
-function ResultsTable({ columns, values }) {
+const ResultsTable = ({ columns, values }) => {
     return (
         <table>
             <thead>
@@ -131,3 +124,5 @@ function ResultsTable({ columns, values }) {
         </table>
     );
 }
+
+export default Editor

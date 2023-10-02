@@ -7,6 +7,7 @@ import Editor from '../components/Editor'
 
 const ChapterOne = () => {
 	const [flow, setFlow] = useState(0);
+	const [consoleComponents, setConsoleComponents] = useState([]);
 
 	let script = `
 		CREATE TABLE Usuarios(id int, nome varchar(25));
@@ -25,7 +26,27 @@ const ChapterOne = () => {
 
 	const handleClick = () => {
 		if (flow < data.length - 1) {
-			setFlow(flow + 1)
+			if (data[flow].type === 'dialogue') {
+				setFlow(flow + 1)
+			}
+		}
+	}
+
+	const handleExercise = (result) => {
+		try {
+			let arr = consoleComponents;
+			
+			if (result[0].columns.length == 3) {
+				arr.push(<p className="console-success" key={arr.length}>Muito bem!</p>)
+				setFlow(flow + 1)
+			} else {
+				arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
+			}
+
+			setConsoleComponents(arr)
+
+		} catch (err) {
+			console.log(err)
 		}
 	}
 
@@ -34,11 +55,11 @@ const ChapterOne = () => {
 			<div className='wrapper'>
 				<div className="textbox-container">
 					<Textbox data={data} flow={flow} />
-					<button className='btn-continuar' onClick={handleClick}>Continuar</button>
+					<button className='btn-continuar' style={{visibility: data[flow].type === 'dialogue' ? 'visible' : 'hidden' }} onClick={handleClick}>Continuar</button>
 				</div>
 
 				<div className="editor-container">
-					<Editor script={script} />
+					<Editor script={script} type={data[flow].type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} />
 				</div>
 			</div>
 

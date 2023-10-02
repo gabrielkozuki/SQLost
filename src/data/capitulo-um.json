@@ -22,5 +22,37 @@
         "sprite": "rascunho-cat.png",
         "background": "d19f4050b314c23.png",
         "speed": 20
+    },
+    {
+        "type": "exercise",
+        "name": "Neko",
+        "text": "Tente listar o conteúdo da tabela 'Produtos' utilizando o comando SELECT.",
+        "sprite": "rascunho-cat.png",
+        "background": "d19f4050b314c23.png",
+        "speed": 20
+    },
+    {
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Ótimo! Muito bom.",
+        "sprite": "rascunho-cat.png",
+        "background": "d19f4050b314c23.png",
+        "speed": 20
+    },
+    {
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Por enquanto essa é apenas uma demonstração, então finalizaremos por aqui. Câmbio desligo.",
+        "sprite": "rascunho-cat.png",
+        "background": "d19f4050b314c23.png",
+        "speed": 20
+    },
+    {
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Até mais!",
+        "sprite": "rascunho-mei-faixa.png",
+        "background": "d19f4050b314c23.png",
+        "speed": 20
     }
 ]
