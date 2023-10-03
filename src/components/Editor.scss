@@ -50,6 +50,10 @@
                 background: #f0f0f0;
             }
         }
+
+        .ace_gutter {
+            z-index: 0 !important;
+        }
     }
 
 	.btn-executar {

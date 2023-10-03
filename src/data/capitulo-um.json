@@ -25,8 +25,9 @@
     },
     {
         "type": "exercise",
+        "ex": 1,
         "name": "Neko",
-        "text": "Tente listar o conteúdo da tabela 'Produtos' utilizando o comando SELECT.",
+        "text": "Tente listar todo o conteúdo da tabela 'Produtos' utilizando o comando SELECT.",
         "sprite": "rascunho-cat.png",
         "background": "d19f4050b314c23.png",
         "speed": 20
@@ -35,6 +36,15 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Ótimo! Muito bom.",
+        "sprite": "rascunho-cat.png",
+        "background": "d19f4050b314c23.png",
+        "speed": 20
+    },
+    {
+        "type": "exercise",
+        "ex": 2,
+        "name": "Neko",
+        "text": "Agora faça o mesmo com a tabela 'Usuarios'.",
         "sprite": "rascunho-cat.png",
         "background": "d19f4050b314c23.png",
         "speed": 20

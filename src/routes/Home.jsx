@@ -15,7 +15,7 @@ const Home = () => {
       <div className="button" onClick={() => handleJogar()}>
         JOGAR
       </div>
-      <p>Aprenda SQL de forma divertida</p>
+      <p>Aprenda SQL de forma divertida!</p>
     </div>
   )
 }

@@ -4,10 +4,13 @@ import data from '../data/capitulo-um.json';
 
 import Textbox from '../components/Textbox'
 import Editor from '../components/Editor'
+import Modal from 'react-modal';
 
 const ChapterOne = () => {
 	const [flow, setFlow] = useState(0);
 	const [consoleComponents, setConsoleComponents] = useState([]);
+	const [modalIsOpen, setModalIsOpen] = useState(true);
+	Modal.setAppElement('#root');
 
 	let script = `
 		CREATE TABLE Usuarios(id int, nome varchar(25));
@@ -24,23 +27,30 @@ const ChapterOne = () => {
 		INSERT INTO Produtos VALUES (3, 'Caneca', 14);
 	`;
 
-	const handleClick = () => {
-		if (flow < data.length - 1) {
-			if (data[flow].type === 'dialogue') {
-				setFlow(flow + 1)
-			}
-		}
-	}
-
 	const handleExercise = (result) => {
 		try {
+			let res = result[0];
 			let arr = consoleComponents;
 			
-			if (result[0].columns.length == 3) {
-				arr.push(<p className="console-success" key={arr.length}>Muito bem!</p>)
-				setFlow(flow + 1)
-			} else {
-				arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
+			switch (data[flow].ex) {
+				case 1:
+					if (res.columns.length == 3 && res.values.length == 3) {
+						arr.push(<p className="console-success" key={arr.length}>Muito bem!</p>)
+						setFlow(flow + 1)
+					} else {
+						arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
+					}
+
+					break;
+				case 2:
+					if (res.columns.length == 2 && res.values.length == 6) {
+						arr.push(<p className="console-success" key={arr.length}>Muito bem!</p>)
+						setFlow(flow + 1)
+					} else {
+						arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
+					}
+
+					break;
 			}
 
 			setConsoleComponents(arr)
@@ -49,6 +59,32 @@ const ChapterOne = () => {
 			console.log(err)
 		}
 	}
+
+	const handleClick = () => {
+		if (flow < data.length - 1) {
+			if (data[flow].type === 'dialogue') {
+				setFlow(flow + 1)
+			}
+		}
+		handleModal()
+	}
+
+	const handleModal = () => {
+		if (flow == data.length - 1) {
+			setModalIsOpen(!modalIsOpen)
+		}
+	}
+
+	const modalStyle = {
+		content: {
+		  top: '50%',
+		  left: '50%',
+		  right: 'auto',
+		  bottom: 'auto',
+		  marginRight: '-50%',
+		  transform: 'translate(-50%, -50%)',
+		},
+	  };
 
 	return (
 		<div className='chapter-one'>
@@ -66,6 +102,29 @@ const ChapterOne = () => {
 			<div className="tables">
 				<p>tabelas: Usuarios(id, nome) Produtos(id, nome, quantidade)</p>
 			</div>
+
+			<Modal
+				isOpen={modalIsOpen}
+				style={{
+					overlay: {
+						backgroundColor: 'rgba(0, 0, 0, 0.2)',
+						textAlign: 'center',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center'
+					},
+					content: {
+						position: 'relative',
+						width: '50%',
+						height: '35%',
+						fontSize: 12,
+						
+					}
+				}}
+				contentLabel="modal"
+			>
+				<h1>Capítulo concluído!</h1>
+			</Modal>
 		</div>
 	)
 }
