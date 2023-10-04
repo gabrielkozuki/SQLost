@@ -5,12 +5,14 @@ import data from '../data/capitulo-um.json';
 import Textbox from '../components/Textbox'
 import Editor from '../components/Editor'
 import Modal from 'react-modal';
+import { useNavigate } from 'react-router-dom';
 
 const ChapterOne = () => {
 	const [flow, setFlow] = useState(0);
 	const [consoleComponents, setConsoleComponents] = useState([]);
-	const [modalIsOpen, setModalIsOpen] = useState(true);
+	const [modalIsOpen, setModalIsOpen] = useState(false);
 	Modal.setAppElement('#root');
+	const navigate = useNavigate()
 
 	let script = `
 		CREATE TABLE Usuarios(id int, nome varchar(25));
@@ -76,14 +78,23 @@ const ChapterOne = () => {
 	}
 
 	const modalStyle = {
-		content: {
-		  top: '50%',
-		  left: '50%',
-		  right: 'auto',
-		  bottom: 'auto',
-		  marginRight: '-50%',
-		  transform: 'translate(-50%, -50%)',
+		overlay: {
+			backgroundColor: 'rgba(0, 0, 0, 0.2)',
+			textAlign: 'center',
+			display: 'flex',
+			justifyContent: 'center',
+			alignItems: 'center'
 		},
+		content: {
+			position: 'relative',
+			width: '50%',
+			height: '35%',
+			fontSize: 12,
+			display: 'flex',
+			flexDirection: 'column',
+			justifyContent: 'space-between',
+			alignItems: 'center'
+		}
 	  };
 
 	return (
@@ -105,26 +116,23 @@ const ChapterOne = () => {
 
 			<Modal
 				isOpen={modalIsOpen}
-				style={{
-					overlay: {
-						backgroundColor: 'rgba(0, 0, 0, 0.2)',
-						textAlign: 'center',
-						display: 'flex',
-						justifyContent: 'center',
-						alignItems: 'center'
-					},
-					content: {
-						position: 'relative',
-						width: '50%',
-						height: '35%',
-						fontSize: 12,
-						
-					}
-				}}
+				style={modalStyle}
 				contentLabel="modal"
 			>
 				<h1>Capítulo concluído!</h1>
+				<button 
+				onClick={() => navigate('/play')}
+				style={{
+					height: '45px',
+					borderWidth: '2px',
+					borderRadius: '2px',
+					borderColor: 'black',
+					borderStyle: 'solid',
+					marginBottom: '15px',
+					marginLeft: '30px',
+				}}>Voltar ao Menu</button>
 			</Modal>
+
 		</div>
 	)
 }
