@@ -13,18 +13,51 @@ const ChapterOne = () => {
 	Modal.setAppElement('#root');
 
 	let script = `
-		CREATE TABLE Usuarios(id int, nome varchar(25));
-		INSERT INTO Usuarios VALUES (1, 'Gabriel');
-		INSERT INTO Usuarios VALUES (2, 'Alice');
-		INSERT INTO Usuarios VALUES (3, 'Júlio');
-		INSERT INTO Usuarios VALUES (4, 'Felipe');
-		INSERT INTO Usuarios VALUES (5, 'Sarah');
-		INSERT INTO Usuarios VALUES (6, 'Sophia');
+		CREATE TABLE Items (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			nome VARCHAR,
+			descricao VARCHAR,
+			valor INTEGER
+		);
+		
+		CREATE TABLE Vinculo (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			descricao VARCHAR,
+			funcionario_id INTEGER,
+			pessoa_id INTEGER,
+			FOREIGN KEY (funcionario_id) REFERENCES Pessoas(id),
+			FOREIGN KEY (pessoa_id) REFERENCES Pessoas(id)
+		);
+		
+		CREATE TABLE Pessoas (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			nome VARCHAR,
+			sobrenome VARCHAR,
+			data_nascimento DATETIME,
+			profissao VARCHAR,
+			is_funcionario BIT
+		);
 
-		CREATE TABLE Produtos(id int, nome varchar(25), quantidade int);
-		INSERT INTO Produtos VALUES (1, 'PlayStation 5', 5);
-		INSERT INTO Produtos VALUES (2, 'Xbox Series X', 2);
-		INSERT INTO Produtos VALUES (3, 'Caneca', 14);
+		INSERT INTO Pessoas (nome, sobrenome, data_nascimento, profissao, is_funcionario)
+		VALUES
+			('João', 'Silva', '1990-05-15', 'Engenheiro', 1),
+			('Maria', 'Fernandes', '1985-12-10', 'Médica', 0),
+			('Pedro', 'Santos', '1995-07-20', 'Advogado', 1),
+			('Ana', 'Oliveira', '1988-03-25', 'Professora', 0);
+
+		INSERT INTO Items (nome, descricao, valor)
+		VALUES
+			('Produto A', 'Este é o Produto A', 100),
+			('Produto B', 'Descrição do Produto B', 150),
+			('Produto C', 'Informações sobre o Produto C', 75),
+			('Produto D', 'Descrição do Produto D', 120);
+
+		INSERT INTO Vinculo (descricao, funcionario_id, pessoa_id)
+		VALUES
+			('Vínculo 1', 1, 3),
+			('Vínculo 2', 2, 4),
+			('Vínculo 3', 1, 2),
+			('Vínculo 4', 3, 3);
 	`;
 
 	const handleExercise = (result) => {
@@ -75,17 +108,6 @@ const ChapterOne = () => {
 		}
 	}
 
-	const modalStyle = {
-		content: {
-		  top: '50%',
-		  left: '50%',
-		  right: 'auto',
-		  bottom: 'auto',
-		  marginRight: '-50%',
-		  transform: 'translate(-50%, -50%)',
-		},
-	  };
-
 	return (
 		<div className='chapter-one'>
 			<div className='wrapper'>
@@ -100,7 +122,14 @@ const ChapterOne = () => {
 			</div>
 
 			<div className="tables">
-				<p>tabelas: Usuarios(id, nome) Produtos(id, nome, quantidade)</p>
+				<div className="row">
+					<div className="col">tabelas:</div>
+					<div className="col">
+						<p>Pessoas (nome, sobrenome, data_nascimento, profissao, is_funcionario)</p>
+						<p>Items (nome, descricao, valor)</p>
+						<p>Vinculo (descricao, funcionario_id, pessoa_id)</p>
+					</div>
+				</div>
 			</div>
 
 			<Modal
