@@ -43,29 +43,46 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
     const bottomRef = useRef(null);
 
     function exec(sql) {
-
-        // tratar comandos invalidos
-        
         let arr = consoleComponents;
+        let commands = ['create', 'drop', 'alter', 'truncate', 'insert', 'delete']
+        let contains = false
+        let command_string = ''
+        
+        commands.forEach(command => {
+            if (sql.toLowerCase().includes(command)) {
+                contains = true;
+                if (command_string.length == 0) {
+                    command_string = command
+                }
+            }
+        });
 
-        try {
-            let res = db.exec(sql);
-            
-            res.map(({ columns, values }) => (
-                arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
-            ))
-
-            setResults(res);
-            handleExercise(res);
-
-        } catch (err) {
-            let error_msg = <p key={arr.length}>Erro: {err.message}</p>
-
+        if (contains) {
+            let error_msg = <p key={arr.length} className="console-fail">Erro: comando não permitido - "{command_string}"</p>
+    
             arr.push(error_msg);
             setResults(error_msg);
             handleExercise(error_msg);
+        } else {
+            try {
+                let res = db.exec(sql);
+                
+                res.map(({ columns, values }) => (
+                    arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
+                ))
+    
+                setResults(res);
+                handleExercise(res);
+    
+            } catch (err) {
+                let error_msg = <p key={arr.length}>Erro: {err.message}</p>
+    
+                arr.push(error_msg);
+                setResults(error_msg);
+                handleExercise(error_msg);
+            }
         }
-        
+
     }
     
     useEffect(() => {
