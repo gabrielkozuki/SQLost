@@ -32,7 +32,7 @@ const ChapterOne = () => {
 		);
 		
 		CREATE TABLE Pessoas (
-			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			id INTEGER PRIMARY KEY,
 			nome VARCHAR,
 			sobrenome VARCHAR,
 			data_nascimento DATETIME,
@@ -42,10 +42,13 @@ const ChapterOne = () => {
 
 		INSERT INTO Pessoas (nome, sobrenome, data_nascimento, profissao, is_funcionario)
 		VALUES
-			('João', 'Silva', '1990-05-15', 'Engenheiro', 1),
-			('Maria', 'Fernandes', '1985-12-10', 'Médica', 0),
-			('Pedro', 'Santos', '1995-07-20', 'Advogado', 1),
-			('Ana', 'Oliveira', '1988-03-25', 'Professora', 0);
+			(1, 'Sam', 'Vincent', '1990-05-15', 'Engenheiro', 0),
+			(2, 'Hannah', 'Cooper', '1985-12-10', 'Cientista', 1),
+			(3, 'Benjamin', 'Williamson', '1995-07-20', 'Advogado', 0),
+			(4, '', '', '', 1),
+			(5, 'Sebastian', 'Greenwood', '1995-07-20', 'Segurança', 1),
+			(6, 'Sophia', 'Weston', '1988-03-25', 'Professora', 0),
+			(7, '', '', '', 0);
 
 		INSERT INTO Items (nome, descricao, valor)
 		VALUES
@@ -56,10 +59,9 @@ const ChapterOne = () => {
 
 		INSERT INTO Vinculo (descricao, funcionario_id, pessoa_id)
 		VALUES
-			('Vínculo 1', 1, 3),
-			('Vínculo 2', 2, 4),
-			('Vínculo 3', 1, 2),
-			('Vínculo 4', 3, 3);
+			('Marido', 2, 1),
+			('Irmão', 5, 3),
+			('Filha', 4, 7);
 	`;
 
 	const handleExercise = (result) => {
@@ -110,6 +112,17 @@ const ChapterOne = () => {
 		}
 	}
 
+	const modalStyle = {
+		content: {
+		  top: '50%',
+		  left: '50%',
+		  right: 'auto',
+		  bottom: 'auto',
+		  marginRight: '-50%',
+		  transform: 'translate(-50%, -50%)',
+		},
+	};
+
 	return (
 		<div className='chapter-one'>
 			<div className='wrapper'>
@@ -125,7 +138,9 @@ const ChapterOne = () => {
 
 			<div className="tables">
 				<div className="row">
-					<div className="col">tabelas:</div>
+					<div className="col">
+						<p>tabelas:</p>
+					</div>
 					<div className="col">
 						<p>Pessoas (nome, sobrenome, data_nascimento, profissao, is_funcionario)</p>
 						<p>Items (nome, descricao, valor)</p>
