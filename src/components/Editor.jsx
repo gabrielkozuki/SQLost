@@ -14,7 +14,7 @@ const Editor = ({ script, type, consoleComponents, setConsoleComponents, handleE
         try {
             await db.run(script);
         } catch (err) {
-            // console.log("Error runScriptDatabase: " + err);
+            console.log("Error runScriptDatabase: " + err);
         }
     }
 

@@ -40,15 +40,15 @@ const ChapterOne = () => {
 			is_funcionario BIT
 		);
 
-		INSERT INTO Pessoas (nome, sobrenome, data_nascimento, profissao, is_funcionario)
+		INSERT INTO Pessoas (id, nome, sobrenome, data_nascimento, profissao, is_funcionario)
 		VALUES
 			(1, 'Sam', 'Vincent', '1990-05-15', 'Engenheiro', 0),
 			(2, 'Hannah', 'Cooper', '1985-12-10', 'Cientista', 1),
 			(3, 'Benjamin', 'Williamson', '1995-07-20', 'Advogado', 0),
-			(4, '', '', '', 1),
+			(4, '', '', '', '', 1),
 			(5, 'Sebastian', 'Greenwood', '1995-07-20', 'Segurança', 1),
 			(6, 'Sophia', 'Weston', '1988-03-25', 'Professora', 0),
-			(7, '', '', '', 0);
+			(7, '', '', '', '', 0);
 
 		INSERT INTO Items (nome, descricao, valor)
 		VALUES
@@ -71,7 +71,7 @@ const ChapterOne = () => {
 			
 			switch (data[flow].ex) {
 				case 1:
-					if (res.columns.length == 3 && res.values.length == 3) {
+					if (res.columns.length == 6 && res.values.length == 7) {
 						arr.push(<p className="console-success" key={arr.length}>Muito bem!</p>)
 						setFlow(flow + 1)
 					} else {
