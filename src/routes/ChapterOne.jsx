@@ -42,20 +42,21 @@ const ChapterOne = () => {
 
 		INSERT INTO Pessoas (id, nome, sobrenome, data_nascimento, profissao, is_funcionario)
 		VALUES
-			(1, 'Sam', 'Vincent', '1990-05-15', 'Engenheiro', 0),
+			(1, 'Sam', 'Vincent', '1995-05-15', 'Engenheiro', 0),
 			(2, 'Hannah', 'Cooper', '1985-12-10', 'Cientista', 1),
-			(3, 'Benjamin', 'Williamson', '1995-07-20', 'Advogado', 0),
-			(4, '', '', '', 1),
+			(3, 'Benjamin', 'Smith', '1995-07-20', 'Advogado', 0),
+			(4, 'David', 'Williams', '1989-03-07', 'Cirurgião', 1),
 			(5, 'Sebastian', 'Greenwood', '1995-07-20', 'Segurança', 1),
-			(6, 'Sophia', 'Weston', '1988-03-25', 'Professora', 0),
-			(7, '', '', '', 0);
+			(6, 'Lilly', 'Williams', '1988-03-25', 'Professora', 0),
+			(7, 'Isabella', 'Williams', '2002-07-12', 'Universitária', 0);
 
 		INSERT INTO Items (nome, descricao, valor)
 		VALUES
-			('Produto A', 'Este é o Produto A', 100),
-			('Produto B', 'Descrição do Produto B', 150),
-			('Produto C', 'Informações sobre o Produto C', 75),
-			('Produto D', 'Descrição do Produto D', 120);
+			('Mesa de cirurgia', 'Mesa de cirurgia elétrica com regulagem de altura', ''),
+			('Bisturi', 'Bisturi de precisão com diversos acessórios', ''),
+			('Fechadura', 'Uma fechadura digital com senha.', '00000000'),
+			('Anotação', 'Um papel com anotações de alguém.', 'TmFkYSBjb25zZWd1ZSBzdXByaW1pciBhIGN1cmlvc2lkYWRlIGRlIHVtIGh1bWFuby4='),
+			('Cama', 'Uma cama de solteiro levemente confortável.', 'Mei');
 
 		INSERT INTO Vinculo (descricao, funcionario_id, pessoa_id)
 		VALUES
