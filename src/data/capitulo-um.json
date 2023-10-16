@@ -1,68 +1,209 @@
 [
     {
+        "index": 0,
+        "type": "dialogue",
+        "name": "...",
+        "text": "5 de Outubro de 3030 - Em uma sala desconhecida",
+        "sprite": "",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 1,
+        "type": "dialogue",
+        "name": "???",
+        "text": "...",
+        "sprite": "rascunho-mei-faixa.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 2,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(olhando ao redor, a garota encontra um documento, mas está em um idioma que não consegue entender)",
+        "sprite": "",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 3,
+        "type": "dialogue",
+        "name": "???",
+        "text": "...?",
+        "sprite": "rascunho-mei-faixa.png",
+        "background": "black-screen.png",
+        "speed": 30
+    },
+    {
+        "index": 4,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(A menina remove a faixa branca de seu rosto e se surpreende com as informações a sua frente, mesmo que não consiga compreender no momento.)",
+        "sprite": "rascunho-mei-faixa.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 5,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(Iniciando...)",
+        "sprite": "",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 6,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(Em uma nova tentativa, ela pega o documento novamente e...)",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 7,
+        "type": "dialogue",
+        "name": "???",
+        "text": "...!",
+        "sprite": "rascunho-mei.png",
+        "background": "black-screen.png",
+        "speed": 30
+    },
+    {
+        "index": 8,
+        "type": "dialogue",
+        "name": "???",
+        "text": "Essa sou eu!",
+        "sprite": "rascunho-mei.png",
+        "background": "black-screen.png",
+        "speed": 30
+    },
+    {
+        "index": 9,
         "type": "dialogue",
         "name": "Mei",
-        "text": "Olá, meu nome é Mei.",
-        "sprite": "rascunho-mei-faixa.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
+        "text": "Mei... Como pude esquecer meu próprio nome?",
+        "sprite": "rascunho-mei.png",
+        "background": "black-screen.png",
+        "speed": 30
     },
     {
-        "type": "dialogue",
-        "name": "Neko",
-        "text": "E eu sou Neko! Meow ~",
-        "sprite": "rascunho-cat.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
-    },
-    {
-        "type": "dialogue",
-        "name": "Neko",
-        "text": "Vamos praticar um pouco de SQL.",
-        "sprite": "rascunho-cat.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
-    },
-    {
-        "type": "exercise",
-        "ex": 1,
-        "name": "Neko",
-        "text": "Tente listar todo o conteúdo da tabela 'Produtos' utilizando o comando SELECT.",
-        "sprite": "rascunho-cat.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
-    },
-    {
-        "type": "dialogue",
-        "name": "Neko",
-        "text": "Ótimo! Muito bom.",
-        "sprite": "rascunho-cat.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
-    },
-    {
-        "type": "exercise",
-        "ex": 2,
-        "name": "Neko",
-        "text": "Agora faça o mesmo com a tabela 'Usuarios'.",
-        "sprite": "rascunho-cat.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
-    },
-    {
-        "type": "dialogue",
-        "name": "Neko",
-        "text": "Por enquanto essa é apenas uma demonstração, então finalizaremos por aqui. Câmbio desligo.",
-        "sprite": "rascunho-cat.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
-    },
-    {
+        "index": 10,
         "type": "dialogue",
         "name": "Mei",
-        "text": "Até mais!",
-        "sprite": "rascunho-mei-faixa.png",
-        "background": "d19f4050b314c23.png",
-        "speed": 20
+        "text": "Fizeram algum tipo de cirurgia em mim que tirou minhas lembranças. Mas por que fariam algo assim?",
+        "sprite": "rascunho-mei.png",
+        "background": "black-screen.png",
+        "speed": 30
+    },
+    {
+        "index": 10,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(Mei senta na beira da cama em que acordou, sem saber o que fazer.)",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 11,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(...Inicialização completa.)",
+        "sprite": "",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 12,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Olá, Mei! Meu nome é Neko, um assistente virtual. Durante a minha inicialização percebi que sua memória foi gravemente afetada.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 13,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Não se preocupe, você está em segurança... Por enquanto.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 60
+    },
+    {
+        "index": 14,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Oi... Como assim por enquanto?!",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 15,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Heh, você acordou nessa sala de cirurgia estranha sem ao menos saber o que veio fazer aqui... Então melhor tomarmos cuidado.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 16,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Obrigada pelo alerta, eu acho... De qualquer forma, me conte mais sobre você.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 17,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Meu principal objetivo é auxiliá-la no que for necessário para utilizar sua prótese corretamente.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 18,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Então esse olho é especial mesmo... Estou curiosa sobre este lugar e a pessoa que te criou. Você sabe de alguma coisa?",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 19,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Infelizmente não tenho essa informação. Mas com a ajuda de seu novo olho, talvez possa conseguir descobrir o que precisa.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 20,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Tudo bem, me mostre como utilizá-lo por gentileza.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 21,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Então vamos lá!",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
     }
 ]

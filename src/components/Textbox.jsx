@@ -9,7 +9,7 @@ const Textbox = (props) => {
     return (
         <div className='textbox'>
             <div className="background" style={{backgroundImage: `url(/backgrounds/${data.background})`}}>
-                <img className='sprite' src={'/sprites/' + data.sprite}></img>
+                <img className='sprite' src={'/sprites/' + data.sprite} style={{display: data.sprite ? 'inline' : 'none'}}></img>
             </div>
             <div className='baloon-text'>{dialogue}</div>
         </div>

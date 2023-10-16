@@ -8,13 +8,13 @@
     .wrapper {
         display: flex;
         flex-direction: row;
-        height: 90%;
+        height: 85%;
         background-color: #33344b;
+        padding-top: 15px;
 
         .textbox-container {
             display: flex;
             flex-direction: column;
-            justify-content: end;
             padding-left: 30px;
 
             .btn-continuar {
@@ -29,6 +29,7 @@
                 margin-left: 30px;
 
                 right: 47%;
+                bottom: 16%;
 
                 &:active {
                     background-color: rgb(231, 231, 231);
@@ -39,7 +40,6 @@
         .editor-container {
             display: flex;
             flex-direction: column;
-            justify-content: end;
             padding-left: 30px;
         }
     }
@@ -47,7 +47,7 @@
     .tables {
         height: auto;
         color: white;
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 10px;
         text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
 
