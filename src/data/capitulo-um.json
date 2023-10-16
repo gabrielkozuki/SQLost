@@ -3,7 +3,7 @@
         "index": 0,
         "type": "dialogue",
         "name": "...",
-        "text": "5 de Outubro de 3030 - Em uma sala desconhecida",
+        "text": "5 de Outubro de 2057 - Em uma sala desconhecida",
         "sprite": "",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -12,7 +12,7 @@
         "index": 1,
         "type": "dialogue",
         "name": "???",
-        "text": "...",
+        "text": "(uma garota acorda desnorteada em uma cama de operado, com uma faixa enrolada na cabeça cobrindo seu olho direito)",
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -21,8 +21,8 @@
         "index": 2,
         "type": "dialogue",
         "name": "...",
-        "text": "(olhando ao redor, a garota encontra um documento, mas está em um idioma que não consegue entender)",
-        "sprite": "",
+        "text": "(olhando ao redor, ela encontra um documento, mas está em um idioma que ela não consegue entender)",
+        "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },
@@ -30,16 +30,16 @@
         "index": 3,
         "type": "dialogue",
         "name": "???",
-        "text": "...?",
+        "text": "...Onde estou? E o que é isso no meu olho?",
         "sprite": "rascunho-mei-faixa.png",
-        "background": "black-screen.png",
+        "background": "sala-cirurgia.png",
         "speed": 30
     },
     {
         "index": 4,
         "type": "dialogue",
         "name": "...",
-        "text": "(A menina remove a faixa branca de seu rosto e se surpreende com as informações a sua frente, mesmo que não consiga compreender no momento.)",
+        "text": "(olhando ao redor, a garota encontra um documento. Em uma tentativa de lê-lo, ela não consegue entender por estar em um idioma que ela desconhece)",
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -48,7 +48,7 @@
         "index": 5,
         "type": "dialogue",
         "name": "...",
-        "text": "(Iniciando...)",
+        "text": "*Iniciando...*",
         "sprite": "",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -57,7 +57,7 @@
         "index": 6,
         "type": "dialogue",
         "name": "...",
-        "text": "(Em uma nova tentativa, ela pega o documento novamente e...)",
+        "text": "(uma coçeira surge e ela decide remover a faixa incômoda de sua cabeça. Após pegar o documento novamente, para sua surpresa, ela consegue entender perfeitamente.)",
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -111,7 +111,7 @@
         "index": 11,
         "type": "dialogue",
         "name": "...",
-        "text": "(...Inicialização completa.)",
+        "text": "*Inicialização completa*",
         "sprite": "",
         "background": "sala-cirurgia.png",
         "speed": 30

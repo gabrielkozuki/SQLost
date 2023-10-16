@@ -66,11 +66,12 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
         } else {
             try {
                 let res = db.exec(sql);
+                arr.push(<p key={arr.length}>&gt; {sql}</p>)
                 
                 res.map(({ columns, values }) => (
                     arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
                 ))
-    
+                
                 setResults(res);
                 handleExercise(res);
     

@@ -73,7 +73,7 @@ const ChapterOne = () => {
 			switch (data[flow].ex) {
 				case 1:
 					if (res.columns.length == 6 && res.values.length == 7) {
-						arr.push(<p className="console-success" key={arr.length}>Muito bem!</p>)
+						arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
 						setFlow(flow + 1)
 					} else {
 						arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
