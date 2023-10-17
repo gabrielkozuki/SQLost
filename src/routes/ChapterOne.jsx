@@ -24,16 +24,16 @@ const ChapterOne = () => {
 
 		INSERT INTO Pacientes (nome, data_nascimento, data_consultas)
 		VALUES
-			('John Smith', '1990-05-15', '2023-10-17'),
-			('Mary Johnson', '1985-12-03', '2023-09-28'),
-			('David Wilson', '2000-07-20', '2023-11-05'),
-			('Jennifer Brown', '1992-08-10', '2023-08-12'),
-			('Michael Davis', '1988-04-25', '2023-07-19'),
-			('Sarah Taylor', '1995-03-30', '2023-06-25'),
-			('William Anderson', '1983-11-15', '2023-05-18'),
-			('Emily Clark', '1998-02-05', '2023-04-14'),
-			('James White', '1979-06-12', '2023-03-09'),
-			('Olivia Martin', '1987-09-22', '2023-02-07');
+			('John Smith', '2024-05-15', '2057-10-27'),
+			('Mary Johnson', '2019-12-03', '2057-09-28'),
+			('Mei Yang', '2034-07-20', '2057-11-05'),
+			('Jennifer Brown', '2026-08-10', '2057-08-12'),
+			('Michael Davis', '2022-04-25', '2057-07-19'),
+			('Sarah Taylor', '2029-03-30', '2057-06-25'),
+			('William Anderson', '2017-11-15', '2057-05-18'),
+			('Emily Clark', '2032-02-05', '2057-04-14'),
+			('James White', '2013-06-12', '2057-03-09'),
+			('Olivia Martin', '2021-09-22', '2057-02-07');
 	`;
 
 	const handleExercise = (result) => {
@@ -43,6 +43,7 @@ const ChapterOne = () => {
 			
 			switch (data[flow].ex) {
 				case 1:
+					debugger
 					break;
 			}
 

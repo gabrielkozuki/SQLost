@@ -205,5 +205,87 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
+    },
+    {
+        "index": 22,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Começaremos a explorar o mundo da manipulação de dados com SQL. SQL é uma linguagem padrão para gerenciar e consultar bancos de dados.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 23,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Bancos de dados são usados para armazenar informações valiosas, como registros de pacientes, informações de clientes, registros de jogos, e muito mais.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 23,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Com o SQL, você pode recuperar, atualizar e manipular as informações de uma tabela. A função do seu olho é permitir que você faça isso diretamente.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 24,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Legal! Mas o que exatamente é uma tabela?",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 25,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Tabelas são objetos de banco de dados que contêm as informações. Eles são organizados em um formato de linha e coluna, parecido com uma planilha.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 26,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Vou utilizar um exemplo. Digamos que você queira saber os nomes e as idades de todos os pacientes de um banco. Eles estão armazenados na tabela “Pacientes”.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 27,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Você pode fazer isso com o comando SELECT, usado para selecionar os dados de uma tabela.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 28,
+        "type": "exercise",
+	    "ex": 1,
+        "name": "Neko",
+        "text": "Escreva o seguinte comando na caixa de texto: “SELECT nome, data_nascimento FROM Pacientes;”. Depois clique no botão “Executar”.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },
+    {
+        "index": 29,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Muito bem! Você pode ver quais tabelas existem no banco de dados disponível para consulta na linha abaixo.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
     }
 ]
