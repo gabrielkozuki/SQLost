@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './ChapterOne.scss'
-import data from '../data/capitulo-um.json';
+import './ChapterTwo.scss'
+import data from '../data/capitulo-dois.json';
 
 import Textbox from '../components/Textbox'
 import Editor from '../components/Editor'
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
 
-const ChapterOne = () => {
+const ChapterTwo = () => {
 	const [flow, setFlow] = useState(0);
 	const [consoleComponents, setConsoleComponents] = useState([]);
 	const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -15,25 +15,54 @@ const ChapterOne = () => {
 	const navigate = useNavigate()
 
 	let script = `
-		CREATE TABLE Pacientes (
-			id INT AUTO_INCREMENT PRIMARY KEY,
-			nome VARCHAR(255) NOT NULL,
-			data_nascimento DATE,
-			data_consultas DATE
+		CREATE TABLE Itens (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			nome VARCHAR,
+			descricao VARCHAR,
+			valor VARCHAR
+		);
+		
+		CREATE TABLE Vinculo (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			descricao VARCHAR,
+			funcionario_id INTEGER,
+			pessoa_id INTEGER,
+			FOREIGN KEY (funcionario_id) REFERENCES Pessoas(id),
+			FOREIGN KEY (pessoa_id) REFERENCES Pessoas(id)
+		);
+		
+		CREATE TABLE Pessoas (
+			id INTEGER PRIMARY KEY,
+			nome VARCHAR,
+			sobrenome VARCHAR,
+			data_nascimento DATETIME,
+			profissao VARCHAR,
+			is_funcionario BIT
 		);
 
-		INSERT INTO Pacientes (nome, data_nascimento, data_consultas)
+		INSERT INTO Pessoas (id, nome, sobrenome, data_nascimento, profissao, is_funcionario)
 		VALUES
-			('John Smith', '1990-05-15', '2023-10-17'),
-			('Mary Johnson', '1985-12-03', '2023-09-28'),
-			('David Wilson', '2000-07-20', '2023-11-05'),
-			('Jennifer Brown', '1992-08-10', '2023-08-12'),
-			('Michael Davis', '1988-04-25', '2023-07-19'),
-			('Sarah Taylor', '1995-03-30', '2023-06-25'),
-			('William Anderson', '1983-11-15', '2023-05-18'),
-			('Emily Clark', '1998-02-05', '2023-04-14'),
-			('James White', '1979-06-12', '2023-03-09'),
-			('Olivia Martin', '1987-09-22', '2023-02-07');
+			(1, 'Sam', 'Vincent', '1995-05-15', 'Engenheiro', 0),
+			(2, 'Hannah', 'Cooper', '1985-12-10', 'Cientista', 1),
+			(3, 'Benjamin', 'Smith', '1995-07-20', 'Advogado', 0),
+			(4, 'David', 'Williams', '1989-03-07', 'Cirurgião', 1),
+			(5, 'Sebastian', 'Greenwood', '1995-07-20', 'Segurança', 1),
+			(6, 'Lilly', 'Williams', '1988-03-25', 'Professora', 0),
+			(7, 'Isabella', 'Williams', '2002-07-12', 'Universitária', 0);
+
+		INSERT INTO Itens (nome, descricao, valor)
+		VALUES
+			('Mesa de cirurgia', 'Mesa de cirurgia elétrica com regulagem de altura', ''),
+			('Bisturi', 'Bisturi de precisão com diversos acessórios', ''),
+			('Fechadura', 'Uma fechadura digital com senha.', '00000000'),
+			('Anotação', 'Um papel com anotações de alguém.', 'TmFkYSBjb25zZWd1ZSBzdXByaW1pciBhIGN1cmlvc2lkYWRlIGRlIHVtIGh1bWFuby4='),
+			('Cama', 'Uma cama de solteiro levemente confortável.', 'Mei');
+
+		INSERT INTO Vinculo (descricao, funcionario_id, pessoa_id)
+		VALUES
+			('Marido', 2, 1),
+			('Irmão', 5, 3),
+			('Filha', 4, 7);
 	`;
 
 	const handleExercise = (result) => {
@@ -69,7 +98,7 @@ const ChapterOne = () => {
 	}
 
 	return (
-		<div className='chapter-one'>
+		<div className='chapter-two'>
 			<div className='wrapper'>
 				<div className="textbox-container">
 					<Textbox data={data} flow={flow} />
@@ -87,7 +116,9 @@ const ChapterOne = () => {
 						<p>tabelas:</p>
 					</div>
 					<div className="col">
-						<p>Pacientes (id, nome, data_nascimento, data_consultas)</p>
+						<p>Pessoas (id, nome, sobrenome, data_nascimento, profissao, is_funcionario)</p>
+						<p>Items (id, nome, descricao, valor)</p>
+						<p>Vinculo (id, descricao, funcionario_id, pessoa_id)</p>
 					</div>
 				</div>
 			</div>
@@ -134,4 +165,4 @@ const ChapterOne = () => {
 	)
 }
 
-export default ChapterOne
+export default ChapterTwo

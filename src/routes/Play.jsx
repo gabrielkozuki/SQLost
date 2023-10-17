@@ -15,7 +15,7 @@ const Play = () => {
             <h1>Seleção de Capítulo</h1>
             <div className="row">
                 <div className="button" onClick={() => handleJogar('/play/chapter-one')}>I</div>
-                <div className="button">II</div>
+                <div className="button" onClick={() => handleJogar('/play/chapter-two')}>II</div>
                 <div className="button">III</div>
                 
             </div>
