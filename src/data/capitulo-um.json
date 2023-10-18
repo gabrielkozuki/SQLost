@@ -7,8 +7,7 @@
         "sprite": "",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 1,
         "type": "dialogue",
         "name": "???",
@@ -16,8 +15,7 @@
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 2,
         "type": "dialogue",
         "name": "...",
@@ -25,8 +23,7 @@
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 3,
         "type": "dialogue",
         "name": "???",
@@ -34,8 +31,7 @@
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 4,
         "type": "dialogue",
         "name": "...",
@@ -43,8 +39,7 @@
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 5,
         "type": "dialogue",
         "name": "...",
@@ -52,8 +47,7 @@
         "sprite": "",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 6,
         "type": "dialogue",
         "name": "...",
@@ -61,8 +55,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 7,
         "type": "dialogue",
         "name": "???",
@@ -70,8 +63,7 @@
         "sprite": "rascunho-mei.png",
         "background": "black-screen.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 8,
         "type": "dialogue",
         "name": "???",
@@ -79,8 +71,7 @@
         "sprite": "rascunho-mei.png",
         "background": "black-screen.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 9,
         "type": "dialogue",
         "name": "Mei",
@@ -88,8 +79,7 @@
         "sprite": "rascunho-mei.png",
         "background": "black-screen.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 10,
         "type": "dialogue",
         "name": "Mei",
@@ -97,8 +87,7 @@
         "sprite": "rascunho-mei.png",
         "background": "black-screen.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 10,
         "type": "dialogue",
         "name": "...",
@@ -106,8 +95,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 11,
         "type": "dialogue",
         "name": "...",
@@ -115,8 +103,7 @@
         "sprite": "",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 12,
         "type": "dialogue",
         "name": "Neko",
@@ -124,8 +111,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 13,
         "type": "dialogue",
         "name": "Neko",
@@ -133,8 +119,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 60
-    },
-    {
+    },{
         "index": 14,
         "type": "dialogue",
         "name": "Mei",
@@ -142,8 +127,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 15,
         "type": "dialogue",
         "name": "Neko",
@@ -151,8 +135,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 16,
         "type": "dialogue",
         "name": "Mei",
@@ -160,8 +143,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 17,
         "type": "dialogue",
         "name": "Neko",
@@ -169,8 +151,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 18,
         "type": "dialogue",
         "name": "Mei",
@@ -178,8 +159,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 19,
         "type": "dialogue",
         "name": "Neko",
@@ -187,8 +167,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 20,
         "type": "dialogue",
         "name": "Mei",
@@ -196,8 +175,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 21,
         "type": "dialogue",
         "name": "Neko",
@@ -205,8 +183,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 22,
         "type": "dialogue",
         "name": "Neko",
@@ -214,8 +191,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 23,
         "type": "dialogue",
         "name": "Neko",
@@ -223,8 +199,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 23,
         "type": "dialogue",
         "name": "Neko",
@@ -232,8 +207,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 24,
         "type": "dialogue",
         "name": "Mei",
@@ -241,8 +215,7 @@
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 25,
         "type": "dialogue",
         "name": "Neko",
@@ -250,8 +223,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 26,
         "type": "dialogue",
         "name": "Neko",
@@ -259,8 +231,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 27,
         "type": "dialogue",
         "name": "Neko",
@@ -268,8 +239,7 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 28,
         "type": "exercise",
 	    "ex": 1,
@@ -278,12 +248,44 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
-    },
-    {
+    },{
         "index": 29,
         "type": "dialogue",
         "name": "Neko",
         "text": "Muito bem! Você pode ver quais tabelas existem no banco de dados disponível para consulta na linha abaixo.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 30,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Entendi. Mas observando isso, eu reparei que existem mais informações nessa tabela do que apenas o nome e a idade dos pacientes.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 31,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Na consulta que você escreveu, você SELECIONOU apenas as colunas “nome, idade” DE Pacientes.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 32,
+        "type": "exercise",
+	    "ex": 2,
+        "name": "Neko",
+        "text": "Caso queira selecionar todas as colunas, utilize o “*”. Tente substituí-los da seguinte forma: “SELECT * FROM Pacientes;”.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 33,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Boa! Caso não se lembre de como a estrutura dos comandos funciona, você pode consultar a aba Ajuda ao lado, no ícone de interrogação (?)",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30

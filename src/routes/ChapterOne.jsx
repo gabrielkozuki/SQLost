@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import './ChapterOne.scss'
 import data from '../data/capitulo-um.json';
 
-import Textbox from '../components/Textbox'
-import Editor from '../components/Editor'
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
+import Textbox from '../components/Textbox'
+import Editor from '../components/Editor'
+import Help from '../components/Help';
 
 const ChapterOne = () => {
-	const [flow, setFlow] = useState(0);
+	const [flow, setFlow] = useState(33);
 	const [consoleComponents, setConsoleComponents] = useState([]);
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	Modal.setAppElement('#root');
@@ -19,21 +20,21 @@ const ChapterOne = () => {
 			id INT AUTO_INCREMENT PRIMARY KEY,
 			nome VARCHAR(255) NOT NULL,
 			data_nascimento DATE,
-			data_consultas DATE
+			data_consulta DATE
 		);
 
-		INSERT INTO Pacientes (nome, data_nascimento, data_consultas)
+		INSERT INTO Pacientes (id, nome, data_nascimento, data_consulta)
 		VALUES
-			('John Smith', '2024-05-15', '2057-10-27'),
-			('Mary Johnson', '2019-12-03', '2057-09-28'),
-			('Mei Yang', '2034-07-20', '2057-11-05'),
-			('Jennifer Brown', '2026-08-10', '2057-08-12'),
-			('Michael Davis', '2022-04-25', '2057-07-19'),
-			('Sarah Taylor', '2029-03-30', '2057-06-25'),
-			('William Anderson', '2017-11-15', '2057-05-18'),
-			('Emily Clark', '2032-02-05', '2057-04-14'),
-			('James White', '2013-06-12', '2057-03-09'),
-			('Olivia Martin', '2021-09-22', '2057-02-07');
+			(1, 'John Smith', '2024-05-15', '2057-10-27'),
+			(2, 'Mary Johnson', '2019-12-03', '2057-09-28'),
+			(3, 'Mei Yang', '2034-07-20', '2057-11-05'),
+			(4, 'Jennifer Brown', '2026-08-10', '2057-08-12'),
+			(5, 'Michael Davis', '2022-04-25', '2057-07-19'),
+			(6, 'Sarah Taylor', '2029-03-30', '2057-06-25'),
+			(7, 'William Anderson', '2017-11-15', '2057-05-18'),
+			(8, 'Emily Clark', '2032-02-05', '2057-04-14'),
+			(9, 'James White', '2013-06-12', '2057-03-09'),
+			(10, 'Olivia Martin', '2021-09-22', '2057-02-07');
 	`;
 
 	const handleExercise = (result) => {
@@ -43,7 +44,30 @@ const ChapterOne = () => {
 			
 			switch (data[flow].ex) {
 				case 1:
-					debugger
+					if (res.columns.length == 2 && res.values.length == 10) {
+						if (res.columns[0] == 'nome' && res.columns[1] == 'data_nascimento') {
+							arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
+							setFlow(flow + 1)
+							break;
+						}
+					}
+
+					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
+					break;
+				case 2:
+					if (res.columns.length == 4 && res.values.length == 10) {
+						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'data_consulta') {
+							arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
+							setFlow(flow + 1)
+							break;
+						}
+					}
+
+					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
+					break;
+				case 3:
+					break;
+				case 4:
 					break;
 			}
 
@@ -88,7 +112,7 @@ const ChapterOne = () => {
 						<p>tabelas:</p>
 					</div>
 					<div className="col">
-						<p>Pacientes (id, nome, data_nascimento, data_consultas)</p>
+						<p>Pacientes (id, nome, data_nascimento, data_consulta)</p>
 					</div>
 				</div>
 			</div>

@@ -19,6 +19,10 @@
 
         text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
 
+        p {
+            line-height: 16px;
+        }
+
         &::-webkit-scrollbar {
             width: 10px;
             height: 10px;
@@ -82,10 +86,11 @@
         border: 1px solid white;
         background-color: transparent;
         color: white;
-        width: 70%;
+        width: 90%;
         margin: 1.5em auto;
         text-align: center;
         border-collapse: collapse;
+        table-layout: auto;
     }
 
     thead {
@@ -93,14 +98,16 @@
         border: 2px solid rgb(255, 255, 255);
 
         td, tr {
-            height: 25px;
             border: 2px solid white;
         }
     }
 
     td, tr {
-        height: 25px;
+        font-size: 11px;
+        min-height: 25px;
         border: 1px solid white;
+        line-height: 16px !important;
+        padding: 4px !important;
     }
 
     .error {
