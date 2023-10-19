@@ -11,6 +11,7 @@ function Help() {
             <div className='help-button' onClick={() => setOpenPanel(true)}>?</div>
 
             <SlidingPane
+                className="slide-container"
                 closeIcon={<div>Fechar</div>}
                 isOpen={openPanel}
                 title="Ajuda"

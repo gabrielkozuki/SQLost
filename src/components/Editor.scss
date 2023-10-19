@@ -6,7 +6,6 @@
 	margin-bottom: 20px;
 	margin-right: 30px;
     font-size: 12px;
-    z-index: 1000;
 
     .console-result {
         width: 480px;
@@ -42,6 +41,7 @@
     .editor-sql {
         font-family: "Press Start 2P", cursive !important;
         line-height: 1.5rem !important;
+        z-index: 1000;
 
         .ace_scrollbar-v, .ace_scrollbar-h {
             &::-webkit-scrollbar {
@@ -70,6 +70,7 @@
 		border-color: black;
 		border-style: solid;
 		margin-top: 20px;
+        z-index: 1000;
 
 		&:active {
 			background-color: rgb(231, 231, 231);
