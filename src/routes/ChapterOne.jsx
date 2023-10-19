@@ -95,6 +95,7 @@ const ChapterOne = () => {
 
 	return (
 		<div className='chapter-one'>
+			<Help />
 			<div className='wrapper'>
 				<div className="textbox-container">
 					<Textbox data={data} flow={flow} />
@@ -154,7 +155,6 @@ const ChapterOne = () => {
 					marginLeft: '30px',
 				}}>Voltar ao Menu</button>
 			</Modal>
-
 		</div>
 	)
 }

@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import './index.scss'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import App from './App'
 import Home from "./routes/Home"
 import Play from "./routes/Play"
 import ChapterOne from "./routes/ChapterOne"
