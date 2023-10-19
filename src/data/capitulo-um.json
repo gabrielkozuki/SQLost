@@ -289,5 +289,111 @@
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
+    },{
+        "index": 34,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Olha só, consegui achar meu registro! Tem vários outros pacientes que passaram por esse lugar também.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 35,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Me pergunto quando foi que a última pessoa passou por esse lugar… Mas comparar todas essas datas da coluna “data_consulta” é muito trabalhoso.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 36,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Não se preocupe. Em uma consulta, você pode ordenar as informações de acordo com a coluna utilizando a palavra chave “ORDER BY”.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 37,
+        "type": "exercise",
+	    "ex": 3,
+        "name": "Neko",
+        "text": "Tente executar um comando SELECT de todas as colunas utilizando “*”, e adicione “ORDER BY data_consulta” no final.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 38,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Consegui! Está ordenado, mesmo que esteja começando pela data mais antiga.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 39,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Isso acontece porque o comando “ORDER BY” ordena de maneira crescente (menor valor primeiro) por padrão. ",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 40,
+        "type": "exercise",
+	    "ex": 4,
+        "name": "Neko",
+        "text": "Para ordenar de maneira decrescente (maior valor primeiro), utilize o comando “DESC” após informar a coluna para o ORDER BY, ou seja, ao final da linha.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 41,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Muito bem. Por enquanto vamos terminar aqui, conforme você for surgindo a necessidade, te ensinarei mais comandos, Mei.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 42,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Obrigada pela ajuda, esses comandos trazem informações realmente úteis...",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 43,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Heh, você ainda não viu nada. As consultas podem ficar ainda mais poderosas conforme você vai pegando o jeito.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 44,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Agora, continue explorando e descobrindo o que mais você pode fazer com seu olho especial. Estou aqui para ajudar sempre que precisar.",
+        "sprite": "rascunho-cat.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 45,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Acho que o meu próximo passo é pensar em como sair desse lugar... Não aguento mais ficar presa nessa sala.",
+        "sprite": "rascunho-mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 46,
+        "type": "dialogue",
+        "name": "",
+        "text": "Após Mei descobrir mais sobre suas novas habilidades, ela traça seu primeiro objetivo, e então começa a pensar em maneiras de alcançá-lo...",
+        "sprite": "",
+        "background": "sala-cirurgia.png",
+        "speed": 30
     }
 ]

@@ -19,9 +19,9 @@ const Play = () => {
                 <div className="button">III</div>
                 
             </div>
-            <div className="trophy">
+            {/*<div className="trophy">
                 <EmojiEventsIcon fontSize="inherit" />
-            </div>
+            </div>*/}
         </div>
     )
 }

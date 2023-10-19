@@ -18,4 +18,9 @@ html, body, #root, div {
 
 .ReactModalPortal {
     height: auto !important;
+    z-index: 2000 !important;
+}
+
+.ReactModal__Overlay {
+    z-index: 2000 !important;
 }

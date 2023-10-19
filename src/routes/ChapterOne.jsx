@@ -9,7 +9,7 @@ import Editor from '../components/Editor'
 import Help from '../components/Help';
 
 const ChapterOne = () => {
-	const [flow, setFlow] = useState(33);
+	const [flow, setFlow] = useState(46);
 	const [consoleComponents, setConsoleComponents] = useState([]);
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	Modal.setAppElement('#root');
@@ -66,8 +66,30 @@ const ChapterOne = () => {
 					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 				case 3:
+					if (res.columns.length == 4 && res.values.length == 10) {
+						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'data_consulta') {
+							if (res.values[0][0] == 10) {
+								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
+								setFlow(flow + 1)
+								break;
+							}
+						}
+					}
+
+					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 				case 4:
+					if (res.columns.length == 4 && res.values.length == 10) {
+						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'data_consulta') {
+							if (res.values[0][0] == 3) {
+								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
+								setFlow(flow + 1)
+								break;
+							}
+						}
+					}
+
+					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 			}
 
