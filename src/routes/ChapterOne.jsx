@@ -9,7 +9,7 @@ import Editor from '../components/Editor'
 import Help from '../components/Help';
 
 const ChapterOne = () => {
-	const [flow, setFlow] = useState(46);
+	const [flow, setFlow] = useState(0);
 	const [consoleComponents, setConsoleComponents] = useState([]);
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	Modal.setAppElement('#root');
