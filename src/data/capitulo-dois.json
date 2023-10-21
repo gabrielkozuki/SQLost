@@ -1,7 +1,8 @@
 [
     {
         "index": 0,
-        "type": "dialogue",
+        "type": "exercise",
+        "ex": 1,
         "name": "...",
         "text": "Em desenvolvimento...",
         "sprite": "",

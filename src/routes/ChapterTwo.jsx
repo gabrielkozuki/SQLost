@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './ChapterTwo.scss'
 import data from '../data/capitulo-dois.json';
 
-import Textbox from '../components/Textbox'
-import Editor from '../components/Editor'
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
+import Textbox from '../components/Textbox'
+import Editor from '../components/Editor'
+import Help from '../components/Help';
 
 const ChapterTwo = () => {
 	const [flow, setFlow] = useState(0);
@@ -99,6 +100,7 @@ const ChapterTwo = () => {
 
 	return (
 		<div className='chapter-two'>
+			<Help />
 			<div className='wrapper'>
 				<div className="textbox-container">
 					<Textbox data={data} flow={flow} />
