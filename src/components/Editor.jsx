@@ -71,7 +71,8 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
                 res.map(({ columns, values }) => (
                     arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
                 ))
-                
+                res.length == 0 ? arr.push(<p key={arr.length} >A consulta retornou uma tabela vazia.</p>) : null
+
                 setResults(res);
                 handleExercise(res);
     

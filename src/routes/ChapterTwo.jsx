@@ -16,24 +16,15 @@ const ChapterTwo = () => {
 	const navigate = useNavigate()
 
 	let script = `
-		CREATE TABLE Itens (
-			id INTEGER PRIMARY KEY AUTOINCREMENT,
+		CREATE TABLE Itens(
+			id INT PRIMARY KEY,
 			nome VARCHAR,
 			descricao VARCHAR,
 			valor VARCHAR
 		);
 		
-		CREATE TABLE Vinculo (
-			id INTEGER PRIMARY KEY AUTOINCREMENT,
-			descricao VARCHAR,
-			funcionario_id INTEGER,
-			pessoa_id INTEGER,
-			FOREIGN KEY (funcionario_id) REFERENCES Pessoas(id),
-			FOREIGN KEY (pessoa_id) REFERENCES Pessoas(id)
-		);
-		
-		CREATE TABLE Pessoas (
-			id INTEGER PRIMARY KEY,
+		CREATE TABLE Pessoas(
+			id INT PRIMARY KEY,
 			nome VARCHAR,
 			sobrenome VARCHAR,
 			data_nascimento DATETIME,
@@ -41,29 +32,39 @@ const ChapterTwo = () => {
 			is_funcionario BIT
 		);
 
-		INSERT INTO Pessoas (id, nome, sobrenome, data_nascimento, profissao, is_funcionario)
-		VALUES
-			(1, 'Sam', 'Vincent', '1995-05-15', 'Engenheiro', 0),
-			(2, 'Hannah', 'Cooper', '1985-12-10', 'Cientista', 1),
-			(3, 'Benjamin', 'Smith', '1995-07-20', 'Advogado', 0),
-			(4, 'David', 'Williams', '1989-03-07', 'Cirurgião', 1),
-			(5, 'Sebastian', 'Greenwood', '1995-07-20', 'Segurança', 1),
-			(6, 'Lilly', 'Williams', '1988-03-25', 'Professora', 0),
-			(7, 'Isabella', 'Williams', '2002-07-12', 'Universitária', 0);
+		CREATE TABLE Relacao(
+			id INT PRIMARY KEY,
+			descricao VARCHAR,
+			funcionario_id INT,
+			pessoa_id INT,
+			FOREIGN KEY(funcionario_id) REFERENCES Pessoas(id),
+			FOREIGN KEY(pessoa_id) REFERENCES Pessoas(id)
+		);
 
-		INSERT INTO Itens (nome, descricao, valor)
+		INSERT INTO Pessoas(id, nome, sobrenome, data_nascimento, profissao, is_funcionario)
 		VALUES
-			('Mesa de cirurgia', 'Mesa de cirurgia elétrica com regulagem de altura', ''),
-			('Bisturi', 'Bisturi de precisão com diversos acessórios', ''),
-			('Fechadura', 'Uma fechadura digital com senha.', '00000000'),
-			('Anotação', 'Um papel com anotações de alguém.', 'TmFkYSBjb25zZWd1ZSBzdXByaW1pciBhIGN1cmlvc2lkYWRlIGRlIHVtIGh1bWFuby4='),
-			('Cama', 'Uma cama de solteiro levemente confortável.', 'Mei');
+			(1091, 'Sam', 'Vincent', '1995-05-15', 'Engenheiro', 0),
+			(1092, 'Hannah', 'Cooper', '1985-12-10', 'Cientista', 1),
+			(1093, 'Benjamin', 'Smith', '1995-07-20', 'Advogado', 0),
+			(1094, 'David', 'Williams', '1989-03-07', 'Cirurgião', 1),
+			(1095, 'Sebastian', 'Greenwood', '1995-07-20', 'Segurança', 1),
+			(1096, 'Lilly', 'Williams', '1988-03-25', 'Professora', 0),
+			(1097, 'Isabella', 'Williams', '2002-07-12', 'Universitária', 0);
 
-		INSERT INTO Vinculo (descricao, funcionario_id, pessoa_id)
+		INSERT INTO Itens(id, nome, descricao, valor)
 		VALUES
-			('Marido', 2, 1),
-			('Irmão', 5, 3),
-			('Filha', 4, 7);
+			(3257, 'Cama de cirurgia', 'Cama de cirurgia elétrica com regulagem de altura', 'Mei'),
+			(6754, 'Bisturi', 'Bisturi de precisão com diversos acessórios', 'Manchas de sangue'),
+			(7087, 'Fechadura', 'Uma fechadura digital com senha', '00000000'),
+			(7919, 'Anotação', 'Um papel com anotações de alguém', 'Ligar p/ dra. Mariana'),
+			(5083, 'Quadro', 'Um quadro com duas pessoas', 'imagem'),
+			(2211, 'Mesa comum', 'Uma mesa com alguns itens apoiados em cima', 'quadro, anotação...');
+
+		INSERT INTO Relacao(id, descricao, funcionario_id, pessoa_id)
+		VALUES
+			(62, 'Marido', 1092, 1091),
+			(87, 'Irmão', 1095, 1093),
+			(21, 'Filha', 1094, 1097);
 	`;
 
 	const handleExercise = (result) => {
@@ -119,8 +120,8 @@ const ChapterTwo = () => {
 					</div>
 					<div className="col">
 						<p>Pessoas (id, nome, sobrenome, data_nascimento, profissao, is_funcionario)</p>
-						<p>Items (id, nome, descricao, valor)</p>
-						<p>Vinculo (id, descricao, funcionario_id, pessoa_id)</p>
+						<p>Itens (id, nome, descricao, valor)</p>
+						<p>Relacao (id, descricao, funcionario_id, pessoa_id)</p>
 					</div>
 				</div>
 			</div>
