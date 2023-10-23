@@ -19,22 +19,22 @@ const ChapterOne = () => {
 		CREATE TABLE Pacientes (
 			id INT AUTO_INCREMENT PRIMARY KEY,
 			nome VARCHAR NOT NULL,
-			data_nascimento VARCHAR,
+			data_nascimento DATE,
 			data_consulta VARCHAR
 		);
 
 		INSERT INTO Pacientes (id, nome, data_nascimento, data_consulta)
 		VALUES
-			(1, 'John Smith', '15/05/2024', '27/10/2057'),
-			(2, 'Mary Johnson', '03/12/2019', '28/09/2057'),
-			(3, 'Mei Yang', '20/07/2034', '05/11/2057'),
-			(4, 'Jennifer Brown', '10/08/2026', '12/08/2057'),
-			(5, 'Michael Davis', '25/04/2022', '19/07/2057'),
-			(6, 'Sarah Taylor', '30/03/2029', '25/06/2057'),
-			(7, 'William Anderson', '15/11/2017', '18/05/2057'),
-			(8, 'Emily Clark', '05/02/2032', '14/04/2057'),
-			(9, 'James White', '12/06/2013', '09/03/2057'),
-			(10, 'Olivia Martin', '22/09/2021', '07/02/2057');
+			(1, 'John Smith', '2024-05-15', '2057-10-27'),
+			(2, 'Mary Johnson', '2019-12-03', '2057-09-28'),
+			(3, 'Mei Yang', '2034-07-20', '2057-11-05'),
+			(4, 'Jennifer Brown', '2026-08-10', '2057-08-12'),
+			(5, 'Michael Davis', '2022-04-25', '2057-07-19'),
+			(6, 'Sarah Taylor', '2029-03-30', '2057-06-25'),
+			(7, 'William Anderson', '2017-11-15', '2057-05-18'),
+			(8, 'Emily Clark', '2032-02-05', '2057-04-14'),
+			(9, 'James White', '2013-06-12', '2057-03-09'),
+			(10, 'Olivia Martin', '2021-09-22', '2057-02-07');
 	`;
 
 	const handleExercise = (result) => {
@@ -103,13 +103,19 @@ const ChapterOne = () => {
 		}
 	}
 
-	const handleClick = () => {
+	const handleContinuar = () => {
 		if (flow < data.length - 1) {
 			if (data[flow].type === 'dialogue') {
 				setFlow(flow + 1)
 			}
 		}
 		handleModal()
+	}
+
+	const handleVoltar = () => {
+		if (flow > 0) {
+			setFlow(flow - 1)
+		}
 	}
 
 	const handleModal = () => {
@@ -124,7 +130,10 @@ const ChapterOne = () => {
 			<div className='wrapper'>
 				<div className="textbox-container">
 					<Textbox data={data} flow={flow} />
-					<button className='btn-continuar' style={{visibility: data[flow].type === 'dialogue' ? 'visible' : 'hidden' }} onClick={handleClick}>Continuar</button>
+					<div className="row-btn">
+						<button className='btn-voltar' onClick={handleVoltar}>Voltar</button>
+						<button className='btn-continuar' onClick={handleContinuar} style={{visibility: data[flow].type === 'dialogue' ? 'visible' : 'hidden' }}>Continuar</button>
+					</div>
 				</div>
 
 				<div className="editor-container">

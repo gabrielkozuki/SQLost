@@ -11,20 +11,12 @@
         "index": 1,
         "type": "dialogue",
         "name": "???",
-        "text": "(uma garota acorda desnorteada em uma cama de operado, com uma faixa enrolada na cabeça cobrindo seu olho direito)",
+        "text": "(Uma garota acorda desnorteada em uma cama de operado, com uma faixa enrolada na cabeça cobrindo seu olho direito)",
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 2,
-        "type": "dialogue",
-        "name": "...",
-        "text": "(olhando ao redor, ela encontra um documento, mas está em um idioma que ela não consegue entender)",
-        "sprite": "rascunho-mei-faixa.png",
-        "background": "sala-cirurgia.png",
-        "speed": 30
-    },{
-        "index": 3,
         "type": "dialogue",
         "name": "???",
         "text": "...Onde estou? E o que é isso no meu olho?",
@@ -32,10 +24,18 @@
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
+        "index": 3,
+        "type": "dialogue",
+        "name": "...",
+        "text": "(Olhando ao redor, a garota encontra um documento.)",
+        "sprite": "rascunho-mei-faixa.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
         "index": 4,
         "type": "dialogue",
         "name": "...",
-        "text": "(olhando ao redor, a garota encontra um documento. Em uma tentativa de lê-lo, ela não consegue entender por estar em um idioma que ela desconhece)",
+        "text": "(Em uma tentativa de lê-lo, ela não consegue entender, pois está em um idioma que não conhece.)",
         "sprite": "rascunho-mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -51,7 +51,7 @@
         "index": 6,
         "type": "dialogue",
         "name": "...",
-        "text": "(uma coçeira surge e ela decide remover a faixa incômoda de sua cabeça. Após pegar o documento novamente, para sua surpresa, ela consegue entender perfeitamente.)",
+        "text": "(Ela sente uma coceira e decide remover a faixa incômoda de sua cabeça. Após pegar o documento novamente, para sua surpresa, ela consegue entender perfeitamente.)",
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -107,40 +107,40 @@
         "index": 12,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Olá, Mei! Meu nome é Neko, um assistente virtual. Durante a minha inicialização percebi que sua memória foi gravemente afetada.",
+        "text": "Olá! Meu nome é Neko, sou um assistente virtual. Te dei uma ajudinha para ler esse documento que você pegou.",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 13,
         "type": "dialogue",
-        "name": "Neko",
-        "text": "Não se preocupe, você está em segurança... Por enquanto.",
-        "sprite": "rascunho-cat.png",
+        "name": "Mei",
+        "text": "Olá... Obrigada mesmo pela ajuda, acabei de acordar e estou um pouco perdida.",
+        "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
-        "speed": 60
+        "speed": 30
     },{
         "index": 14,
         "type": "dialogue",
-        "name": "Mei",
-        "text": "Oi... Como assim por enquanto?!",
-        "sprite": "rascunho-mei.png",
+        "name": "Neko",
+        "text": "Durante a minha inicialização percebi que sua memória foi gravemente afetada. Mas não se preocupe, você parece estar em um local seguro por enquanto.",
+        "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 15,
         "type": "dialogue",
-        "name": "Neko",
-        "text": "Você acordou nessa sala de cirurgia estranha sem ao menos saber o que veio fazer aqui... Então melhor tomarmos cuidado.",
-        "sprite": "rascunho-cat.png",
+        "name": "Mei",
+        "text": "Sobre o documento que você traduziu em um instante... Como você fez isso?",
+        "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 16,
         "type": "dialogue",
-        "name": "Mei",
-        "text": "Obrigada pelo alerta, eu acho... De qualquer forma, me conte mais sobre você.",
-        "sprite": "rascunho-mei.png",
+        "name": "Neko",
+        "text": "Legal, né? Essa é apenas uma de minhas capacidades.",
+        "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -244,7 +244,7 @@
         "type": "exercise",
 	    "ex": 1,
         "name": "Neko",
-        "text": "Escreva o seguinte comando na caixa de texto: “SELECT nome, data_nascimento FROM Pacientes;”. Depois clique no botão “Executar”.",
+        "text": "Escreva o seguinte comando na caixa de texto do lado direito: “SELECT nome, data_nascimento FROM Pacientes;”. Depois clique no botão “Executar”.",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -268,7 +268,7 @@
         "index": 31,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Na consulta que você escreveu, você SELECIONOU apenas as colunas “nome, idade” DE Pacientes.",
+        "text": "Na consulta que você escreveu, você selecionou apenas as colunas “nome, idade” de Pacientes.",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -301,7 +301,7 @@
         "index": 35,
         "type": "dialogue",
         "name": "Mei",
-        "text": "Me pergunto quando foi que a última pessoa passou por esse lugar… Mas comparar todas essas datas da coluna “data_consulta” é muito trabalhoso.",
+        "text": "Me pergunto quando foi que a última pessoa passou por esse lugar... Mas comparar todas essas datas da coluna “data_consulta” é muito trabalhoso.",
         "sprite": "rascunho-mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -309,7 +309,7 @@
         "index": 36,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Não se preocupe. Em uma consulta, você pode ordenar as informações de acordo com a coluna utilizando a palavra chave “ORDER BY”.",
+        "text": "Não se preocupe. Em uma consulta, você pode ordenar as informações de acordo com a coluna que quiser, utilizando a palavra chave “ORDER BY”.",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30

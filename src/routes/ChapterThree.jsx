@@ -167,13 +167,19 @@ const ChapterThree = () => {
 		}
 	}
 
-	const handleClick = () => {
+	const handleContinuar = () => {
 		if (flow < data.length - 1) {
 			if (data[flow].type === 'dialogue') {
 				setFlow(flow + 1)
 			}
 		}
 		handleModal()
+	}
+
+	const handleVoltar = () => {
+		if (flow > 0) {
+			setFlow(flow - 1)
+		}
 	}
 
 	const handleModal = () => {
@@ -188,7 +194,10 @@ const ChapterThree = () => {
 			<div className='wrapper'>
 				<div className="textbox-container">
 					<Textbox data={data} flow={flow} />
-					<button className='btn-continuar' style={{visibility: data[flow].type === 'dialogue' ? 'visible' : 'hidden' }} onClick={handleClick}>Continuar</button>
+					<div className="row-btn">
+						<button className='btn-voltar' onClick={handleVoltar}>Voltar</button>
+						<button className='btn-continuar' onClick={handleContinuar} style={{visibility: data[flow].type === 'dialogue' ? 'visible' : 'hidden' }}>Continuar</button>
+					</div>
 				</div>
 
 				<div className="editor-container">
