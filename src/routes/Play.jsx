@@ -1,6 +1,5 @@
 import React from 'react'
 import './Play.scss'
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import { useNavigate } from 'react-router-dom';
 
 const Play = () => {
@@ -17,11 +16,7 @@ const Play = () => {
                 <div className="button" onClick={() => handleJogar('/play/chapter-one')}>I</div>
                 <div className="button" onClick={() => handleJogar('/play/chapter-two')}>II</div>
                 <div className="button" onClick={() => handleJogar('/play/chapter-three')}>III</div>
-                
             </div>
-            {/*<div className="trophy">
-                <EmojiEventsIcon fontSize="inherit" />
-            </div>*/}
         </div>
     )
 }

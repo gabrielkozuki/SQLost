@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import './Help.scss';
 import SlidingPane from "react-sliding-pane";
+import Collapse from '@kunukn/react-collapse'
+import './Help.scss';
 import "react-sliding-pane/dist/react-sliding-pane.css";
 
 function Help() {
     const [openPanel, setOpenPanel] = useState(false);
+    const [showCollapse, setShowCollapse] = useState(false);
 
     return (
         <div className="help-panel">
@@ -12,14 +14,21 @@ function Help() {
 
             <SlidingPane
                 className="slide-container"
-                closeIcon={<div>Fechar</div>}
+                closeIcon={<div>X (Fechar)</div>}
                 isOpen={openPanel}
                 title="Ajuda"
                 from="left"
                 width="45%"
                 onRequestClose={() => setOpenPanel(false)}
             >
-                <div>And I am pane content on left.</div>
+                <div className="row" onClick={() => setShowCollapse(!showCollapse)}>
+                    <i class="fa-solid fa-angle-right"></i>
+                    Sobre o jogo
+                </div>
+                <Collapse isOpen={showCollapse}>
+                    <div>Teste</div>
+                </Collapse>
+
             </SlidingPane>
         </div>
     );
