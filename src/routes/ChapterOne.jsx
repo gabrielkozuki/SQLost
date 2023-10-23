@@ -18,23 +18,23 @@ const ChapterOne = () => {
 	let script = `
 		CREATE TABLE Pacientes (
 			id INT AUTO_INCREMENT PRIMARY KEY,
-			nome VARCHAR(255) NOT NULL,
-			data_nascimento DATE,
-			data_consulta DATE
+			nome VARCHAR NOT NULL,
+			data_nascimento VARCHAR,
+			data_consulta VARCHAR
 		);
 
 		INSERT INTO Pacientes (id, nome, data_nascimento, data_consulta)
 		VALUES
-			(1, 'John Smith', '2024-05-15', '2057-10-27'),
-			(2, 'Mary Johnson', '2019-12-03', '2057-09-28'),
-			(3, 'Mei Yang', '2034-07-20', '2057-11-05'),
-			(4, 'Jennifer Brown', '2026-08-10', '2057-08-12'),
-			(5, 'Michael Davis', '2022-04-25', '2057-07-19'),
-			(6, 'Sarah Taylor', '2029-03-30', '2057-06-25'),
-			(7, 'William Anderson', '2017-11-15', '2057-05-18'),
-			(8, 'Emily Clark', '2032-02-05', '2057-04-14'),
-			(9, 'James White', '2013-06-12', '2057-03-09'),
-			(10, 'Olivia Martin', '2021-09-22', '2057-02-07');
+			(1, 'John Smith', '15/05/2024', '27/10/2057'),
+			(2, 'Mary Johnson', '03/12/2019', '28/09/2057'),
+			(3, 'Mei Yang', '20/07/2034', '05/11/2057'),
+			(4, 'Jennifer Brown', '10/08/2026', '12/08/2057'),
+			(5, 'Michael Davis', '25/04/2022', '19/07/2057'),
+			(6, 'Sarah Taylor', '30/03/2029', '25/06/2057'),
+			(7, 'William Anderson', '15/11/2017', '18/05/2057'),
+			(8, 'Emily Clark', '05/02/2032', '14/04/2057'),
+			(9, 'James White', '12/06/2013', '09/03/2057'),
+			(10, 'Olivia Martin', '22/09/2021', '07/02/2057');
 	`;
 
 	const handleExercise = (result) => {
@@ -54,6 +54,7 @@ const ChapterOne = () => {
 
 					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
+					
 				case 2:
 					if (res.columns.length == 4 && res.values.length == 10) {
 						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'data_consulta') {
@@ -65,6 +66,7 @@ const ChapterOne = () => {
 
 					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
+
 				case 3:
 					if (res.columns.length == 4 && res.values.length == 10) {
 						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'data_consulta') {
@@ -78,6 +80,7 @@ const ChapterOne = () => {
 
 					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
+					
 				case 4:
 					if (res.columns.length == 4 && res.values.length == 10) {
 						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'data_consulta') {
@@ -125,7 +128,7 @@ const ChapterOne = () => {
 				</div>
 
 				<div className="editor-container">
-					<Editor script={script} type={data[flow].type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} />
+					<Editor script={script} type={data[flow].type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} chapter={1} indexJson={data[flow].index} />
 				</div>
 			</div>
 

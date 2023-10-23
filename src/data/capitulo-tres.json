@@ -1,0 +1,12 @@
+[
+    {
+        "index": 0,
+        "type": "exercise",
+	    "ex": 999,
+        "name": "",
+        "text": "Em desenvolvimento",
+        "sprite": "",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    }
+]

@@ -7,6 +7,7 @@ import Home from "./routes/Home"
 import Play from "./routes/Play"
 import ChapterOne from "./routes/ChapterOne"
 import ChapterTwo from "./routes/ChapterTwo"
+import ChapterThree from "./routes/ChapterThree"
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: '/play/chapter-two',
     element: <ChapterTwo/>
+  },
+  {
+    path: '/play/chapter-three',
+    element: <ChapterThree/>
   }
 ])
 

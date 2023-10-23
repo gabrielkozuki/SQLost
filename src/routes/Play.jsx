@@ -16,7 +16,7 @@ const Play = () => {
             <div className="row">
                 <div className="button" onClick={() => handleJogar('/play/chapter-one')}>I</div>
                 <div className="button" onClick={() => handleJogar('/play/chapter-two')}>II</div>
-                <div className="button">III</div>
+                <div className="button" onClick={() => handleJogar('/play/chapter-three')}>III</div>
                 
             </div>
             {/*<div className="trophy">

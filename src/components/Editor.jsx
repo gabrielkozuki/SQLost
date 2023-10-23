@@ -7,7 +7,7 @@ import "ace-builds/src-noconflict/mode-mysql";
 import "ace-builds/src-noconflict/theme-textmate";
 import "ace-builds/src-noconflict/ext-language_tools";
 
-const Editor = ({ script, type, consoleComponents, setConsoleComponents, handleExercise }) => {
+const Editor = ({ script, type, consoleComponents, setConsoleComponents, handleExercise, chapter, indexJson }) => {
     const [db, setDb] = useState(null);
 
     const runScriptDatabase = async (script) => {
@@ -33,10 +33,10 @@ const Editor = ({ script, type, consoleComponents, setConsoleComponents, handleE
         createDatabase();
     }, []);
 
-    return <SQLRepl db={db} type={type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} />;
+    return <SQLRepl db={db} type={type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} chapter={chapter} indexJson={indexJson} />;
 }
 
-const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExercise }) => {
+const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExercise, chapter, indexJson }) => {
     const [enableEditor, setEnableEditor] = useState(false);
     const [sql, setSql] = useState('');
     const [results, setResults] = useState([]);
@@ -44,13 +44,21 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
 
     function exec(sql) {
         let arr = consoleComponents;
-        let commands = ['create', 'drop', 'alter', 'truncate', 'insert', 'delete']
+        let commands = ['create', 'drop', 'alter', 'truncate', 'insert', 'delete', 'update']
         let contains = false
         let command_string = ''
+        let command_exception = false
         
         commands.forEach(command => {
             if (sql.toLowerCase().includes(command)) {
                 contains = true;
+
+                // allow UPDATE commands in specific exercises
+                if (command == 'update' && chapter == 2 && indexJson == 43 && sql.toLowerCase().includes('07032016') && sql.toLowerCase().includes('1094') && sql.toLowerCase().includes('valor')) {
+                    contains = false;
+                    command_exception = true;
+                }
+
                 if (command_string.length == 0) {
                     command_string = command
                 }
@@ -71,7 +79,10 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
                 res.map(({ columns, values }) => (
                     arr.push(<ResultsTable key={arr.length} columns={columns} values={values} />)
                 ))
-                res.length == 0 ? arr.push(<p key={arr.length} >A consulta retornou uma tabela vazia.</p>) : null
+                
+                if (res.length == 0) {
+                    command_exception ? arr.push(<p key={arr.length}>Comando executado com sucesso!</p>) : arr.push(<p key={arr.length}>A consulta retornou uma tabela vazia.</p>)
+                }
 
                 setResults(res);
                 handleExercise(res);

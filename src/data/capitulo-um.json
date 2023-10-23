@@ -131,7 +131,7 @@
         "index": 15,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Heh, você acordou nessa sala de cirurgia estranha sem ao menos saber o que veio fazer aqui... Então melhor tomarmos cuidado.",
+        "text": "Você acordou nessa sala de cirurgia estranha sem ao menos saber o que veio fazer aqui... Então melhor tomarmos cuidado.",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -285,7 +285,7 @@
         "index": 33,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Boa! Caso não se lembre de como a estrutura dos comandos funciona, você pode consultar a aba Ajuda ao lado, no ícone de interrogação (?)",
+        "text": "Boa! Caso não se lembre de como a estrutura dos comandos funciona, você pode consultar a aba Ajuda ao lado, clicando no ícone de interrogação (?)",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -367,7 +367,7 @@
         "index": 43,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Heh, você ainda não viu nada. As consultas podem ficar ainda mais poderosas conforme você vai pegando o jeito.",
+        "text": "Yohoho, você ainda não viu nada. As consultas podem ficar ainda mais poderosas conforme você vai pegando o jeito.",
         "sprite": "rascunho-cat.png",
         "background": "sala-cirurgia.png",
         "speed": 30

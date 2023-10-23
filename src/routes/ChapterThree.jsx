@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import './ChapterTwo.scss'
-import data from '../data/capitulo-dois.json';
+import './ChapterThree.scss'
+import data from '../data/capitulo-tres.json';
 
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +8,7 @@ import Textbox from '../components/Textbox'
 import Editor from '../components/Editor'
 import Help from '../components/Help';
 
-const ChapterTwo = () => {
+const ChapterThree = () => {
 	const [flow, setFlow] = useState(0);
 	const [consoleComponents, setConsoleComponents] = useState([]);
 	const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -74,94 +74,21 @@ const ChapterTwo = () => {
 			
 			switch (data[flow].ex) {
 				case 1:
-					if (res.columns.length == 4 && res.values.length == 6) {
-						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'descricao' && res.columns[3] == 'valor') {
-							arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-							setFlow(flow + 1)
-							break;
-						}
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 
 				case 2:
-					if (res.columns.length == 5 && res.values.length == 8) {
-						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'profissao' && res.columns[4] == 'is_funcionario') {
-							arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-							setFlow(flow + 1)
-							break;
-						}
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 
 				case 3:
-					if (res.columns.length == 5 && res.values.length == 2) {
-						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'profissao' && res.columns[4] == 'is_funcionario') {
-							if (res.values[0][0] == 1094 && res.values[0][0] == 1098) {
-								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-								setFlow(flow + 1)
-								break;
-							}
-						}
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 
 				case 4:
-					if (res.columns.length == 5 && res.values.length == 1) {
-						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'profissao' && res.columns[4] == 'is_funcionario') {
-							if (res.values[0][0] == 1094) {
-								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-								setFlow(flow + 1)
-								break;
-							}
-						}
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 
 				case 5:
-					if (res.columns.length == 4 && res.values.length == 1) {
-						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'descricao' && res.columns[3] == 'valor') {
-							if (res.values[0][0] == 7087) {
-								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-								setFlow(flow + 1)
-								break;
-							}
-						}
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 
 				case 6:
-					// corrigir mensagem de erro
-					if (!(res.props.children[0].toLowerCase().includes('erro'))) {
-						arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-						setFlow(flow + 1)
-						break;
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Verifique se os valores estão sendo atualizados corretamente.</p>)
-					break;
-
-				case 7:
-					if (res.columns.length == 4 && res.values.length == 1) {
-						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'descricao' && res.columns[3] == 'valor') {
-							if (res.values[0][0] == 7087) {
-								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-								setFlow(flow + 1)
-								break;
-							}
-						}
-					}
-
-					arr.push(<p className="console-fail" key={arr.length}>Os resultados estão incorretos.</p>)
 					break;
 			}
 
@@ -188,7 +115,7 @@ const ChapterTwo = () => {
 	}
 
 	return (
-		<div className='chapter-two'>
+		<div className='chapter-three'>
 			<Help />
 			<div className='wrapper'>
 				<div className="textbox-container">
@@ -197,7 +124,7 @@ const ChapterTwo = () => {
 				</div>
 
 				<div className="editor-container">
-					<Editor script={script} type={data[flow].type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} chapter={2} indexJson={data[flow].index} />
+					<Editor script={script} type={data[flow].type} consoleComponents={consoleComponents} setConsoleComponents={setConsoleComponents} handleExercise={handleExercise} chapter={3} indexJson={data[flow].index} />
 				</div>
 			</div>
 
@@ -256,4 +183,4 @@ const ChapterTwo = () => {
 	)
 }
 
-export default ChapterTwo
+export default ChapterThree
