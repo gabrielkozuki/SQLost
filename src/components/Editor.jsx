@@ -58,6 +58,10 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
                     contains = false;
                     command_exception = true;
                 }
+                if (command == 'update' && chapter == 3 && indexJson == 48 && sql.toLowerCase().includes('12072036') && (sql.toLowerCase().includes('1094') || sql.toLowerCase().includes('Fechadura')) && sql.toLowerCase().includes('valor')) {
+                    contains = false;
+                    command_exception = true;
+                }
 
                 if (command_string.length == 0) {
                     command_string = command

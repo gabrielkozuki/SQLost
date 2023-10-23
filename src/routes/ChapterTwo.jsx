@@ -141,13 +141,18 @@ const ChapterTwo = () => {
 
 				case 6:
 					// corrigir mensagem de erro
-					if (!(res.props.children[0].toLowerCase().includes('erro'))) {
-						arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-						setFlow(flow + 1)
-						break;
+					if (!res.length > 0) {
+						if (!(res.props.children[0].toLowerCase().includes('erro'))) {
+							arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
+							setFlow(flow + 1)
+							break;
+						} else {
+							arr.push(<p className="console-fail" key={arr.length}>Verifique se os valores estão sendo atualizados corretamente.</p>)
+							break
+						}
 					}
 
-					arr.push(<p className="console-fail" key={arr.length}>Verifique se os valores estão sendo atualizados corretamente.</p>)
+					arr.push(<p className="console-fail" key={arr.length}>O resultado está retornando uma tabela.</p>)
 					break;
 
 				case 7:
