@@ -69,7 +69,13 @@ const SQLRepl = ({ db, type, consoleComponents, setConsoleComponents, handleExer
             }
         });
 
-        if (contains) {
+        if (!sql.toLowerCase().includes(';')) {
+            let error_msg = <p key={arr.length} className="console-fail">Instruções SQL precisam terminar com ; (ponto e vírgula)</p>
+    
+            arr.push(error_msg);
+            setResults(error_msg);
+            handleExercise(error_msg);
+        } else if (contains) {
             let error_msg = <p key={arr.length} className="console-fail">Erro: comando não permitido - "{command_string}"</p>
     
             arr.push(error_msg);
