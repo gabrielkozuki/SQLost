@@ -35,6 +35,10 @@ html, body, #root {
         display: flex;
         flex-direction: row;
         align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
 
         i {
             font-size: 25px;
@@ -42,4 +46,7 @@ html, body, #root {
         }
     }
     
+    .content-collapse {
+        margin-bottom: 20px;
+    }
 }
