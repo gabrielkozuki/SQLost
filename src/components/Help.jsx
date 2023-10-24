@@ -34,7 +34,7 @@ function Help() {
                 onRequestClose={() => setOpenPanel(false)}
             >
                 <div className="row" onClick={() => handleCollapse(0)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[0] ? 'fa-rotate-90' : ''}`}></i>
                     Sobre o jogo
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[0]}>
@@ -42,7 +42,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(1)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[1] ? 'fa-rotate-90' : ''}`}></i>
                     O que é SQL?
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[1]}>
@@ -50,7 +50,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(2)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[2] ? 'fa-rotate-90' : ''}`}></i>
                     Estrutura de comandos
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[2]}>
@@ -58,7 +58,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(3)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[3] ? 'fa-rotate-90' : ''}`}></i>
                     Selecionar todos os dados de uma tabela (SELECT)
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[3]}>
@@ -66,7 +66,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(4)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[4] ? 'fa-rotate-90' : ''}`}></i>
                     Selecionar colunas específicas
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[4]}>
@@ -74,7 +74,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(5)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[5] ? 'fa-rotate-90' : ''}`}></i>
                     Ordenar linhas (ORDER BY)
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[5]}>
@@ -82,7 +82,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(6)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[6] ? 'fa-rotate-90' : ''}`}></i>
                     Filtrar linhas (WHERE)
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[6]}>
@@ -90,7 +90,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(7)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[7] ? 'fa-rotate-90' : ''}`}></i>
                     Operadores condicionais (AND, OR)
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[7]}>
@@ -98,7 +98,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(8)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[8] ? 'fa-rotate-90' : ''}`}></i>
                     Atualizar linhas (UPDATE)
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[8]}>
@@ -106,7 +106,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(9)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[9] ? 'fa-rotate-90' : ''}`}></i>
                     Dicas
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[9]}>
@@ -114,7 +114,7 @@ function Help() {
                 </Collapse>
 
                 <div className="row" onClick={() => handleCollapse(10)}>
-                    <i className="fa-solid fa-angle-right"></i>
+                    <i className={`fa-solid fa-angle-right ${showCollapse[10] ? 'fa-rotate-90' : ''}`}></i>
                     Saiba mais
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[10]}>

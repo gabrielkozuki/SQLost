@@ -31,6 +31,22 @@ html, body, #root {
 .slide-container {
     background-color: black;
 
+    .slide-pane__content {
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        &::-webkit-scrollbar-track {
+            background: white;
+        }
+        &::-webkit-scrollbar-corner {
+            background: white;
+        }
+    }
+
     .row {
         display: flex;
         flex-direction: row;
@@ -47,6 +63,11 @@ html, body, #root {
     }
     
     .content-collapse {
+        margin-top: 15px;
         margin-bottom: 20px;
+    }
+
+    .fa-angle-right, .fa-rotate-90 {
+        transition: 0.29s all;
     }
 }
