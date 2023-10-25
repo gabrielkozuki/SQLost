@@ -39,7 +39,8 @@ function Help() {
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[0]}>
                     <div className="content-collapse">
-                        <p>SQLost é um jogo educacional criado para auxiliar no processo de ensino e aprendizado de conteúdos de banco de dados por meio da linguagem de consulta estruturada SQL. Este projeto é um resultado do Trabalho de Conclusão de Curso apresentado ao Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas do Instituto Federal do Paraná - Campus Londrina.</p>
+                        <p>SQLost é um jogo educacional criado para auxiliar no processo de ensino e aprendizado de conteúdos de banco de dados por meio da linguagem de consulta estruturada SQL.</p>
+                        <p>Este projeto é um resultado do Trabalho de Conclusão de Curso apresentado ao Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas do Instituto Federal do Paraná - Campus Londrina.</p>
                     </div>
                 </Collapse>
 
@@ -72,7 +73,7 @@ function Help() {
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[3]}>
                     <div className="content-collapse">
                         <p>A cláusula SELECT é uma das mais fundamentais no SQL, pois é usada para recuperar dados de uma tabela. Para selecionar todos os dados de uma tabela:</p>
-                        <div className="script-example">SELECT * FROM nome_da_tabela;</div>
+                        <div className="script-example"><span className='sql-command'>SELECT</span> * <span className='sql-command'>FROM</span> nome_da_tabela;</div>
                         <ul>
                             <li>‘SELECT’: cláusula que indica que você deseja recuperar dados;</li>
                             <li>‘*’ (asterisco): um curinga que representa todas as colunas da tabela;</li>
@@ -91,9 +92,9 @@ function Help() {
                     <div className="content-collapse">
                         <p>A cláusula ORDER BY é usada para classificar os resultados da consulta de acordo com uma ou mais colunas de uma tabela, sendo útil quando desejar que os resultados sejam exibidos em uma ordem específica.</p>
                         <div className="script-example">
-                            SELECT coluna1, coluna2, ... <br />
-                            FROM nome_da_tabela <br />
-                            ORDER BY coluna_para_ordenar [ASC | DESC]; <br />
+                            <span className='sql-command'>SELECT</span> coluna1, coluna2, ... <br />
+                            &nbsp;&nbsp;<span className='sql-command'>FROM</span> nome_da_tabela <br />
+                            &nbsp;&nbsp;<span className='sql-command'>ORDER BY</span> coluna_para_ordenar [<span className='sql-command'>ASC</span> | <span className='sql-command'>DESC</span>]; <br />
                         </div>
                         <ul>
                             <li>‘ORDER BY’: cláusula que especifica como os resultados devem ser ordenados;</li>
@@ -111,9 +112,9 @@ function Help() {
                     <div className="content-collapse">
                         <p>A cláusula WHERE é usada para filtrar as linhas de uma tabela com base em uma condição especificada. Essa cláusula é essencial para recuperar apenas os dados que atendam a critérios específicos.</p>
                         <div className="script-example">
-                            SELECT coluna1, coluna2, ... <br />
-                            FROM nome_da_tabela <br />
-                            WHERE condição; <br />
+                            <span className='sql-command'>SELECT</span> coluna1, coluna2, ... <br />
+                            &nbsp;&nbsp;<span className='sql-command'>FROM</span> nome_da_tabela <br />
+                            &nbsp;&nbsp;<span className='sql-command'>WHERE</span> condição; <br />
                         </div>
                         <ul>
                             <li>‘WHERE’: é a cláusula que define a condição pela qual você deseja filtrar as linhas.</li>
@@ -128,25 +129,27 @@ function Help() {
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[6]}>
                     <div className="content-collapse">
-                        <p>Condições são expressões que você usa na cláusula WHERE para especificar critérios que determinam quais linhas da tabela devem ser incluídas no resultado da consulta. As condições são construídas com base em operadores e valores, e elas ajudam a filtrar os dados com base em regras específicas. Alguns dos operadores mais comuns são:</p>
-                        <p>Operadores de comparação - são usados para comparar valores e criar condições. Alguns operadores comuns incluem:</p>
+                        <p>Condições são expressões que você usa na cláusula WHERE para especificar critérios que determinam quais linhas da tabela devem ser incluídas no resultado da consulta.</p>
+                        <p>As condições são construídas com base em operadores e valores, e elas ajudam a filtrar os dados com base em regras específicas. Alguns dos operadores mais comuns são:</p>
+                        <br />
+                        <p><span style={{textDecoration: 'underline', textDecorationThickness: '2px'}}>Operadores de comparação</span>: são usados para comparar valores e criar condições. Alguns operadores comuns incluem:</p>
                         <ul>
-                            <li>‘=’ (igual): verifica se dois valores são iguais;</li>
-                            <li>‘!=’ ou ‘&lt;&gt;’ (diferente): verifica se dois valores são diferentes; </li>
-                            <li>‘&lt;’ (menor que): verifica se o valor à esquerda é menor que o valor à direita;</li>
-                            <li>‘&gt;’ (maior que): verifica se o valor à esquerda é maior que o valor à direita;</li>
+                            <li>‘=’ (igual): verifica se dois valores são iguais</li>
+                            <li>‘!=’ (diferente): verifica se dois valores são diferentes</li>
+                            <li>‘&lt;’ (menor que): verifica se o valor à esquerda é menor que o valor à direita</li>
+                            <li>‘&gt;’ (maior que): verifica se o valor à esquerda é maior que o valor à direita    </li>
                         </ul>
-                        <p>Operadores lógicos - são usados para combinar condições. Os operadores lógicos mais comuns incluem:</p>
+                        <p><span style={{textDecoration: 'underline', textDecorationThickness: '2px'}}>Operadores lógicos</span>: são usados para combinar condições. Os operadores lógicos mais comuns incluem:</p>
                         <ul>
                             <li>‘AND’ (E): retorna verdadeiro se todas as condições forem verdadeiras;</li>
                             <li>‘OR’ (OU): retorna verdadeiro se pelo menos uma das condições for verdadeira;</li>
                         </ul>
                         <p>É possível usar quantos operadores lógicos quiser em conjunto para criar condições mais complexas:</p>
                         <div className="script-example">
-                        SELECT * FROM nome_da_tabela <br />
-                        WHERE coluna_x = valor_x <br />
-                            AND coluna_y &gt; valor_z <br />
-                            AND coluna_z != valor_qualquer;
+                        <span className='sql-command'>SELECT</span> * <span className='sql-command'>FROM</span> nome_da_tabela <br />
+                        <span className='sql-command'>WHERE</span> coluna_x = valor_x <br />
+                            &nbsp;&nbsp;<span className='sql-command'>AND</span> coluna_y &gt; valor_z <br />
+                            &nbsp;&nbsp;<span className='sql-command'>AND</span> coluna_z != valor_qualquer;
                         </div>
                     </div>
                 </Collapse>
@@ -159,17 +162,17 @@ function Help() {
                     <div className="content-collapse">
                         <p>A cláusula UPDATE é usada para modificar os dados existentes em uma tabela. Com esse comando, você pode fazer alterações em um ou mais campos de uma ou várias linhas, de acordo com uma condição específica.</p>
                         <div className="script-example">
-                            UPDATE nome_da_tabela <br />
-                            SET coluna1 = novo_valor1, coluna2 = novo_valor2, ... <br />
-                            WHERE condição; <br />
+                            <span className='sql-command'>UPDATE</span> nome_da_tabela<br />
+                            &nbsp;&nbsp;<span className='sql-command'>SET</span> coluna1 = novo_valor1, coluna2 = novo_valor2, ...<br />
+                            &nbsp;&nbsp;<span className='sql-command'>WHERE</span> condição;<br />
                         </div>
+                        <ul>
+                            <li>‘UPDATE’: cláusula que indica que você deseja atualizar os dados;</li>
+                            <li>‘SET’: é usado para especificar quais colunas devem ser atualizadas e quais valores devem ser atribuídos a elas;</li>
+                            <li>‘SET coluna1 = novo_valor1, coluna2 = novo_valor2, …’: lista as colunas que serão atualizadas e os novos valores que serão atribuídos a elas;</li>
+                            <li>‘WHERE’: é opcional, mas geralmente usado para limitar as atualizações apenas às linhas que atendem a uma determinada condição.</li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>‘UPDATE’: cláusula que indica que você deseja atualizar os dados;</li>
-                        <li>‘SET’: é usado para especificar quais colunas devem ser atualizadas e quais valores devem ser atribuídos a elas;</li>
-                        <li>‘SET coluna1 = novo_valor1, coluna2 = novo_valor2, …’: lista as colunas que serão atualizadas e os novos valores que serão atribuídos a elas;</li>
-                        <li>‘WHERE’ é opcional, mas geralmente usado para limitar as atualizações apenas às linhas que atendem a uma determinada condição.</li>
-                    </ul>
                 </Collapse>
             </SlidingPane>
         </div>

@@ -31,7 +31,7 @@ html, body, #root {
 .slide-container {
     background-color: black;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
 
     .slide-pane__content {
         &::-webkit-scrollbar {
@@ -65,12 +65,44 @@ html, body, #root {
     
     .content-collapse {
         margin-top: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        padding-left: 30px;
 
         p {
             margin-top: 0;
             text-align: justify;
             text-justify: inter-word;
+        }
+
+        .script-example {
+            font-size: 13px;
+            line-height: 21px;
+            padding: 20px;
+            border: 2px solid rgba(128, 128, 128, 0.5);
+            border-radius: 2px;
+            margin: 20px 0 20px;
+
+            .sql-command {
+                color: blue;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 15px;
+            margin: 15px 0 30px;
+
+            li {
+                margin-bottom: 15px;
+
+                &::before {
+                    content: "➤";
+                    font-size: 12px;
+                    text-align: center;
+                    vertical-align: text-bottom;
+                    padding-right: 5px;
+                }
+            }
         }
     }
 
