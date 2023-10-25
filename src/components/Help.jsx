@@ -62,6 +62,7 @@ function Help() {
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[2]}>
                     <div className="content-collapse">
                         <p>Uma instrução SQL é uma instrução que você envia a um banco de dados para realizar uma operação específica. Ele é composto por uma lista ordenada de cláusulas, como SELECT, FROM, WHERE, etc. Instruções SQL devem sempre terminar com ponto e vírgula (;).</p>
+                        <p>Além disso, a linguagem SQL não diferencia as palavras-chave maiúsculas de minúsculas: ‘select’ é a mesma coisa que ‘SELECT’, ou seja, não é case sensitive.</p>
                         <p>Explore as seções abaixo para conhecer a sintaxe dos comandos que são apresentados ao decorrer do jogo!</p>
                     </div>
                 </Collapse>

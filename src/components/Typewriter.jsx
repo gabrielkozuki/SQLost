@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 export function Typewriter(textToType, interKeyStrokeDurationInMs) {
   const [currentPosition, setCurrentPosition] = useState(0);
   const currentPositionRef = useRef(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentPosition((value) => value + 1);
       currentPositionRef.current += 1;
