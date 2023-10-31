@@ -227,7 +227,7 @@
         "index": 26,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Vou utilizar um exemplo. Digamos que você queira saber os nomes e as idades de todos os pacientes de um banco. Eles estão armazenados na tabela “Pacientes”.",
+        "text": "Vou utilizar um exemplo. Digamos que você queira saber os nomes e as datas de nascimento de todos os pacientes de um banco. Eles estão armazenados na tabela “Pacientes”.",
         "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -260,7 +260,7 @@
         "index": 30,
         "type": "dialogue",
         "name": "Mei",
-        "text": "Entendi. Mas observando isso, eu reparei que existem mais informações nessa tabela do que apenas o nome e a idade dos pacientes.",
+        "text": "Entendi. Mas observando isso, eu reparei que existem mais informações nessa tabela do que apenas o nome e a data de nascimento dos pacientes.",
         "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -268,7 +268,7 @@
         "index": 31,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Na consulta que você escreveu, você selecionou apenas as colunas “nome, idade” de Pacientes.",
+        "text": "Na consulta que você escreveu, você selecionou apenas as colunas “nome, data_nascimento” de Pacientes.",
         "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
