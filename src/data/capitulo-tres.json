@@ -5,7 +5,7 @@
         "name": "",
         "text": "Ainda na sala de cirurgia...",
         "sprite": "",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 1,
@@ -13,7 +13,7 @@
         "name": "Mei",
         "text": "A combinação não funcionou... O que vamos fazer agora?",
         "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 2,
@@ -54,7 +54,7 @@
         "name": "Mei",
         "text": "Certo... Parece uma foto bem normal pra mim.",
         "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "background": "foto-mesa.png",
         "speed": 30
     },{
         "index": 6,
@@ -62,7 +62,7 @@
         "name": "Mei",
         "text": "Espera, esse é o doutor? Será que essa é a família dele?",
         "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "background": "foto-mesa.png",
         "speed": 30
     },{
         "index": 7,
@@ -70,7 +70,7 @@
         "name": "Neko",
         "text": "Podemos presumir que sim.",
         "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "background": "foto-mesa.png",
         "speed": 30
     },{
         "index": 8,
@@ -390,28 +390,20 @@
         "speed": 30
     },{
         "index": 47,
-        "type": "dialogue",
-        "name": "Mei",
-        "text": "... Certo. Espero que seja mesmo a senha correta dessa vez.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
-        "speed": 30
-    },{
-        "index": 48,
         "type": "exercise",
 	    "ex": 6,
         "name": "Mei",
         "text": "Vou atualizar a fechadura para a data de nascimento de Isabella. O valor novo será ‘12072036’.",
         "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
-        "index": 49,
+        "index": 48,
         "type": "dialogue",
         "name": "",
         "text": "A fechadura eletrônica faz um som, e então Mei tenta abrir a porta...",
         "sprite": "",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 49,
@@ -419,7 +411,7 @@
         "name": "Mei",
         "text": "...! Abriu!",
         "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 50,

@@ -12,7 +12,7 @@
         "type": "dialogue",
         "name": "???",
         "text": "(Uma garota acorda desnorteada em uma cama de operado, com uma faixa enrolada na cabeça cobrindo seu olho direito)",
-        "sprite": "rascunho-mei-faixa.png",
+        "sprite": "mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -20,7 +20,7 @@
         "type": "dialogue",
         "name": "???",
         "text": "...Onde estou? E o que é isso no meu olho?",
-        "sprite": "rascunho-mei-faixa.png",
+        "sprite": "mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -28,7 +28,7 @@
         "type": "dialogue",
         "name": "...",
         "text": "(Olhando ao redor, a garota encontra um documento.)",
-        "sprite": "rascunho-mei-faixa.png",
+        "sprite": "mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -36,7 +36,7 @@
         "type": "dialogue",
         "name": "...",
         "text": "(Em uma tentativa de lê-lo, ela não consegue entender, pois está em um idioma que não conhece.)",
-        "sprite": "rascunho-mei-faixa.png",
+        "sprite": "mei-faixa.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -52,7 +52,7 @@
         "type": "dialogue",
         "name": "...",
         "text": "(Ela sente uma coceira e decide remover a faixa incômoda de sua cabeça. Após pegar o documento novamente, para sua surpresa, ela consegue entender perfeitamente.)",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -60,39 +60,39 @@
         "type": "dialogue",
         "name": "???",
         "text": "...!",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 8,
         "type": "dialogue",
         "name": "???",
         "text": "Essa sou eu!",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 9,
         "type": "dialogue",
         "name": "Mei",
         "text": "Mei... Como pude esquecer meu próprio nome?",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 10,
         "type": "dialogue",
         "name": "Mei",
         "text": "Fizeram algum tipo de cirurgia em mim que tirou minhas lembranças. Mas por que fariam algo assim?",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 10,
         "type": "dialogue",
         "name": "...",
         "text": "(Mei senta na beira da cama em que acordou, sem saber o que fazer.)",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -108,7 +108,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Olá! Meu nome é Neko, sou um assistente virtual. Te dei uma ajudinha para ler esse documento que você pegou.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -116,7 +116,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Olá... Obrigada mesmo pela ajuda, acabei de acordar e estou um pouco perdida.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -124,7 +124,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Durante a minha inicialização percebi que sua memória foi gravemente afetada. Mas não se preocupe, você parece estar em um local seguro por enquanto.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -132,7 +132,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Sobre o documento que você traduziu em um instante... Como você fez isso?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -140,7 +140,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Legal, né? Essa é apenas uma de minhas capacidades.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -148,7 +148,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Meu principal objetivo é auxiliá-la no que for necessário para utilizar sua prótese corretamente.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -156,7 +156,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Então esse olho é especial mesmo... Estou curiosa sobre este lugar e a pessoa que te criou. Você sabe de alguma coisa?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -164,7 +164,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Infelizmente não tenho essa informação. Mas com a ajuda de seu novo olho, talvez possa conseguir descobrir o que precisa.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -172,7 +172,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Tudo bem, me mostre como utilizá-lo por gentileza.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -180,7 +180,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Então vamos lá!",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -188,7 +188,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Começaremos a explorar o mundo da manipulação de dados com SQL. SQL é uma linguagem padrão para gerenciar e consultar bancos de dados.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -196,7 +196,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Bancos de dados são usados para armazenar informações valiosas, como registros de pacientes, informações de clientes, registros de jogos, e muito mais.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -204,7 +204,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Com o SQL, você pode recuperar, atualizar e manipular as informações de uma tabela. A função do seu olho é permitir que você faça isso diretamente.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -212,7 +212,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Legal! Mas o que exatamente é uma tabela?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -220,7 +220,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Tabelas são objetos de banco de dados que contêm as informações. Eles são organizados em um formato de linha e coluna, parecido com uma planilha.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -228,7 +228,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Vou utilizar um exemplo. Digamos que você queira saber os nomes e as idades de todos os pacientes de um banco. Eles estão armazenados na tabela “Pacientes”.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -236,7 +236,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Você pode fazer isso com o comando SELECT, usado para selecionar os dados de uma tabela.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -245,7 +245,7 @@
 	    "ex": 1,
         "name": "Neko",
         "text": "Escreva o seguinte comando na caixa de texto do lado direito: “SELECT nome, data_nascimento FROM Pacientes;”. Depois clique no botão “Executar”.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -253,7 +253,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Muito bem! Você pode ver quais tabelas existem no banco de dados disponível para consulta na linha abaixo.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -261,7 +261,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Entendi. Mas observando isso, eu reparei que existem mais informações nessa tabela do que apenas o nome e a idade dos pacientes.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -269,7 +269,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Na consulta que você escreveu, você selecionou apenas as colunas “nome, idade” de Pacientes.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -278,7 +278,7 @@
 	    "ex": 2,
         "name": "Neko",
         "text": "Caso queira selecionar todas as colunas, utilize o “*”. Tente substituí-los da seguinte forma: “SELECT * FROM Pacientes;”.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -286,7 +286,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Boa! Caso não se lembre de como a estrutura dos comandos funciona, você pode consultar a aba Ajuda ao lado, clicando no ícone de interrogação (?)",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -294,7 +294,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Olha só, consegui achar meu registro! Tem vários outros pacientes que passaram por esse lugar também.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -302,7 +302,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Me pergunto quando foi que a última pessoa passou por esse lugar... Mas comparar todas essas datas da coluna “data_consulta” é muito trabalhoso.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -310,7 +310,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Não se preocupe. Em uma consulta, você pode ordenar as informações de acordo com a coluna que quiser, utilizando a palavra chave “ORDER BY”.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -319,7 +319,7 @@
 	    "ex": 3,
         "name": "Neko",
         "text": "Tente executar um comando SELECT de todas as colunas utilizando “*”, e adicione “ORDER BY data_consulta” no final.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -327,7 +327,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Consegui! Está ordenado, mesmo que esteja começando pela data mais antiga.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -335,7 +335,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Isso acontece porque o comando “ORDER BY” ordena de maneira crescente (menor valor primeiro) por padrão. ",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -344,7 +344,7 @@
 	    "ex": 4,
         "name": "Neko",
         "text": "Para ordenar de maneira decrescente (maior valor primeiro), utilize o comando “DESC” após informar a coluna para o ORDER BY, ou seja, ao final da linha.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -352,7 +352,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Muito bem. Por enquanto vamos terminar aqui, conforme você for surgindo a necessidade, te ensinarei mais comandos, Mei.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -360,7 +360,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Obrigada pela ajuda, esses comandos trazem informações realmente úteis...",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -368,7 +368,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Yohoho, você ainda não viu nada. As consultas podem ficar ainda mais poderosas conforme você vai pegando o jeito.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -376,7 +376,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Agora, continue explorando e descobrindo o que mais você pode fazer com seu olho especial. Estou aqui para ajudar sempre que precisar.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -384,7 +384,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Acho que o meu próximo passo é pensar em como sair desse lugar... Não aguento mais ficar presa nessa sala.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{

@@ -13,39 +13,39 @@
         "name": "",
         "text": "Ela avista a saída, mas o acesso ao lado de fora está bloqueado por uma fechadura eletrônica.",
         "sprite": "",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 2,
         "type": "dialogue",
         "name": "Mei",
         "text": "Neko, está aí? A saída é por aqui, mas temos um problema.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 3,
         "type": "dialogue",
         "name": "Neko",
         "text": "O que aconteceu?",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 4,
         "type": "dialogue",
         "name": "Mei",
         "text": "A porta está pedindo uma senha, mas não faço ideia de qual seja a combinação.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 5,
         "type": "dialogue",
         "name": "Neko",
         "text": "Hmm... Vamos procurar melhor pela sala, quem sabe não encontramos alguma pista. Dê uma olhada nas tabelas disponíveis com seu olho.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 6,
@@ -53,7 +53,7 @@
 	    "ex": 1,
         "name": "Mei",
         "text": "Ok. Vou começar buscando todas as colunas de Itens usando o comando SELECT.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -61,7 +61,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Encontrei o registro da fechadura!",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -69,7 +69,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Pelo valor padrão, podemos assumir que a senha é um número de 8 dígitos.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -77,7 +77,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Sim, mas como iremos descobrir? Se chutarmos não vamos conseguir abrir nunca.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -85,7 +85,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Tem razão, mas pode ser outro número mais fácil, como um telefone ou uma data de nascimento de alguém que trabalha aqui.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -93,7 +93,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Você acha mesmo que iriam colocar uma senha dessas? Parece ter coisas bem secretas aqui dentro.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -101,7 +101,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Não custa tentar.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -110,7 +110,7 @@
 	    "ex": 2,
         "name": "Mei",
         "text": "Certo. Vou procurar mais pistas nas outras tabelas. (Selecione todas as colunas da tabela Pessoas)",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -118,7 +118,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Tem alguns dados interessantes sobre as pessoas desse lugar, como nome, data de nascimento, profissão...",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -126,7 +126,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Se tem alguém que frequenta essa sala e sabe a senha da porta, é o cirurgião daqui.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -134,7 +134,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "(*forçando o olho*) Eu só preciso achar o nome direito...",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -142,7 +142,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Espera, vou te mostrar uma maneira de procurar por informações específicas.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -150,7 +150,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Tem como fazer isso?! Devia ter me dito antes.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -158,7 +158,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Yohoho! Antes tarde do que nunca.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -166,7 +166,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Você pode filtrar os resultados de uma consulta utilizando a cláusula WHERE. Ela permite que você especifique condições de acordo com o valor que você quiser.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -174,7 +174,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Nesse caso, iremos selecionar as pessoas que têm a profissão de cirurgião.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -183,7 +183,7 @@
 	    "ex": 3,
         "name": "Neko",
         "text": "Para isso, adicione “WHERE profissao = ‘Cirurgião;” ao final da sua consulta SELECT. Lembre-se de colocar os acentos e letras maiúsculas corretamente.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -191,7 +191,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Deu certo! Ficou bem mais fácil de ver agora.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -199,7 +199,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Temos duas pessoas com a mesma profissão aqui. Qual deles é quem estamos procurando?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -207,7 +207,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Observe a coluna “is_funcionario”. Ela deve indicar se a pessoa é um funcionário daqui ou não.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -215,7 +215,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Se o valor for 1, indica que é um funcionário. Caso contrário, o valor é 0.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -223,7 +223,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Correto! Vamos colocar um filtro adicional no nosso comando WHERE com o operador AND. Com ele, a linha precisa atender a essas duas condições para que apareça nos resultados.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -232,7 +232,7 @@
 	    "ex": 4,
         "name": "Neko",
         "text": "Execute o seguinte comando: “SELECT * FROM Pessoas WHERE profissao = ‘Cirurgião’ AND is_funcionario = 1;”",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -240,7 +240,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Correto! Vamos colocar um filtro adicional no nosso comando WHERE com o operador AND. Com ele, a linha precisa atender a essas duas condições para que apareça nos resultados.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -249,7 +249,7 @@
 	    "ex": 4,
         "name": "Neko",
         "text": "Execute o seguinte comando: “SELECT * FROM Pessoas WHERE profissao = ‘Cirurgião’ AND is_funcionario = 1;”",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -257,7 +257,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Perfeito! Você pode adicionar quantos AND desejar, pense nele como se fosse um WHERE adicional.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -265,7 +265,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Certo, obrigada pela dica!",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -273,7 +273,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Agora que temos uma data de nascimento, podemos tentar abrir a porta.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -282,7 +282,7 @@
 	    "ex": 5,
         "name": "Mei",
         "text": "Vou selecionar novamente todas as colunas de Itens, mas dessa vez utilizando “WHERE nome = ‘Fechadura’;”.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -290,64 +290,64 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Pronto. Preciso colocar a senha correta e destrancar a porta, mas os botões numéricos não funcionam...",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 36,
         "type": "dialogue",
         "name": "Mei",
         "text": "Neko, você pode me ajudar?",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 37,
         "type": "dialogue",
         "name": "Neko",
         "text": "Claro! Existe uma maneira de atualizar registros utilizando SQL, usando o comando UPDATE.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 38,
         "type": "dialogue",
         "name": "Neko",
         "text": "Com UPDATE, você pode atualizar os registros informando a tabela, a coluna que quer atualizar e o novo valor.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 39,
         "type": "dialogue",
         "name": "Neko",
         "text": "Mas cuidado: caso não utilize a cláusula WHERE em conjunto com um comando UPDATE, todos os registros da tabela irão ser afetados com a mudança.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 40,
         "type": "dialogue",
         "name": "Mei",
         "text": "Isso seria péssimo! Preciso tomar cuidado com isso.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 41,
         "type": "dialogue",
         "name": "Neko",
         "text": "Com grandes poderes vem grandes responsabilidades. Vou te mostrar um exemplo de um UPDATE com a cláusula WHERE.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 42,
         "type": "dialogue",
         "name": "Neko",
         "text": "Primeiro, vamos utilizar a data de nascimento que você consultou e deixar apenas os números. A data 07/03/2016 ficará como “07032016”.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 43,
@@ -355,7 +355,7 @@
 	    "ex": 6,
         "name": "Neko",
         "text": "Agora tente executar o seguinte comando: “UPDATE Itens SET valor = ‘07032016’ WHERE id = 1094;”.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -364,7 +364,7 @@
 	    "ex": 7,
         "name": "Neko",
         "text": "Muito bem, agora busque novamente pela fechadura na tabela Itens, e veja se a alteração funcionou.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -372,48 +372,48 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Deu certo! O valor agora está com a data de nascimento do cirurgião. Mas por que você utilizou a coluna “id” ao invés do nome para atualizar o valor da fechadura?",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 46,
         "type": "dialogue",
         "name": "Neko",
         "text": "Boa pergunta! O “id” serve como um identificador único para cada linha da tabela do banco de dados, portanto não há valores repetidos. Esse valor único é chamado de chave primária.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 47,
         "type": "dialogue",
         "name": "Neko",
         "text": "Caso houvesse mais de um registro como nome “Fechadura”, o meu comando atualizaria esses dois valores. Por isso, sempre que quiser alterar apenas um registro, use o “id” na cláusula WHERE.",
-        "sprite": "rascunho-cat.png",
-        "background": "black-screen.png",
+        "sprite": "neko.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 48,
         "type": "dialogue",
         "name": "Mei",
         "text": "Bem, acho que entendi o que quis dizer.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 49,
         "type": "dialogue",
         "name": "Neko",
         "text": "Caso tenha dúvidas, você pode consultar a aba Ajuda ao lado, clicando no ícone de interrogação (?).",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 50,
         "type": "dialogue",
         "name": "Mei",
         "text": "Agora que colocamos a senha, vamos sair daqui.",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 51,
@@ -421,15 +421,15 @@
         "name": "",
         "text": "Mei tenta puxar a maçaneta...",
         "sprite": "",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 52,
         "type": "dialogue",
         "name": "Mei",
         "text": "... O quê?",
-        "sprite": "rascunho-mei.png",
-        "background": "black-screen.png",
+        "sprite": "mei.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 53,
@@ -437,7 +437,7 @@
         "name": "",
         "text": "Mas a porta não se abre.",
         "sprite": "",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     }
 ]
