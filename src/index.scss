@@ -26,6 +26,20 @@ html, body, #root {
     z-index: 2000 !important;
 }
 
+.ReactModal__Content {
+    border: 8px solid black !important;
+    width: 40% !important;
+    height: 20% !important;
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    button {
+        margin: 0
+    }
+}
+
 
 // react-sliding-pane
 .slide-container {

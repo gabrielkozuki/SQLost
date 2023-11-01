@@ -44,7 +44,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Hmm... Vamos procurar melhor pela sala, quem sabe não encontramos alguma pista. Dê uma olhada nas tabelas disponíveis com seu olho.",
-        "sprite": "mei.png",
+        "sprite": "neko.png",
         "background": "saida.png",
         "speed": 30
     },{
@@ -133,7 +133,7 @@
         "index": 16,
         "type": "dialogue",
         "name": "Mei",
-        "text": "(*forçando o olho*) Eu só preciso achar o nome direito...",
+        "text": "Eu só preciso achar o nome direito...",
         "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -157,7 +157,7 @@
         "index": 19,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Yohoho! Antes tarde do que nunca.",
+        "text": "Antes tarde do que nunca. Yohoho!",
         "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -222,7 +222,7 @@
         "index": 27,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Correto! Vamos colocar um filtro adicional no nosso comando WHERE com o operador AND. Com ele, a linha precisa atender a essas duas condições para que apareça nos resultados.",
+        "text": "Correto! Vamos colocar um filtro adicional no nosso comando WHERE com o operador AND. Com ele, a linha precisará atender a essas duas condições para que apareça nos resultados.",
         "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -239,24 +239,7 @@
         "index": 29,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Correto! Vamos colocar um filtro adicional no nosso comando WHERE com o operador AND. Com ele, a linha precisa atender a essas duas condições para que apareça nos resultados.",
-        "sprite": "neko.png",
-        "background": "sala-cirurgia.png",
-        "speed": 30
-    },{
-        "index": 30,
-        "type": "exercise",
-	    "ex": 4,
-        "name": "Neko",
-        "text": "Execute o seguinte comando: “SELECT * FROM Pessoas WHERE profissao = ‘Cirurgião’ AND is_funcionario = 1;”",
-        "sprite": "neko.png",
-        "background": "sala-cirurgia.png",
-        "speed": 30
-    },{
-        "index": 31,
-        "type": "dialogue",
-        "name": "Neko",
-        "text": "Perfeito! Você pode adicionar quantos AND desejar, pense nele como se fosse um WHERE adicional.",
+        "text": " Perfeito! Você pode adicionar quantos AND desejar, pense nele como se fosse um WHERE adicional.",
         "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -371,7 +354,7 @@
         "index": 45,
         "type": "dialogue",
         "name": "Mei",
-        "text": "Deu certo! O valor agora está com a data de nascimento do cirurgião. Mas por que você utilizou a coluna “id” ao invés do nome para atualizar o valor da fechadura?",
+        "text": "Deu certo! O valor agora está com a data de nascimento do cirurgião. Mas por que você utilizou a coluna “id” ao invés de “nome” para atualizar o valor da fechadura?",
         "sprite": "mei.png",
         "background": "saida.png",
         "speed": 30
@@ -387,7 +370,15 @@
         "index": 47,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Caso houvesse mais de um registro como nome “Fechadura”, o meu comando atualizaria esses dois valores. Por isso, sempre que quiser alterar apenas um registro, use o “id” na cláusula WHERE.",
+        "text": "Caso houvesse mais de um registro com o nome “Fechadura”, o meu comando atualizaria esses dois valores.",
+        "sprite": "neko.png",
+        "background": "saida.png",
+        "speed": 30
+    },{
+        "index": 47,
+        "type": "dialogue",
+        "name": "Neko",
+        "text": "Por isso, sempre que quiser alterar apenas um registro, use a coluna “id” na cláusula WHERE.",
         "sprite": "neko.png",
         "background": "saida.png",
         "speed": 30
@@ -404,7 +395,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Caso tenha dúvidas, você pode consultar a aba Ajuda ao lado, clicando no ícone de interrogação (?).",
-        "sprite": "mei.png",
+        "sprite": "neko.png",
         "background": "saida.png",
         "speed": 30
     },{
@@ -419,7 +410,7 @@
         "index": 51,
         "type": "dialogue",
         "name": "",
-        "text": "Mei tenta puxar a maçaneta...",
+        "text": "Mei tenta apertar o botão para abrir...",
         "sprite": "",
         "background": "saida.png",
         "speed": 30

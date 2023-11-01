@@ -12,7 +12,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "A combinação não funcionou... O que vamos fazer agora?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "saida.png",
         "speed": 30
     },{
@@ -20,7 +20,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Bem, foi bom enquanto durou. Parece que vamos ficar presos aqui pra sempre.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -28,7 +28,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Pra sempre?! Não vou desistir tão fácil assim. Vamos ter que dar um jeito de sair daqui.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -36,7 +36,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Yohoho! Estou apenas brincando. Analisei alguns outros registros interessantes que podem nos dar uma pista.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -45,7 +45,7 @@
 	    "ex": 1,
         "name": "Neko",
         "text": "Dê uma olhada na tabela Itens de novo usando SELECT, na linha com id = 5083.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -53,7 +53,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Certo... Parece uma foto bem normal pra mim.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "foto-mesa.png",
         "speed": 30
     },{
@@ -61,15 +61,15 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Espera, esse é o doutor? Será que essa é a família dele?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "foto-mesa.png",
         "speed": 30
     },{
         "index": 7,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Podemos presumir que sim.",
-        "sprite": "rascunho-cat.png",
+        "text": "Podemos presumir que sim. E se tentarmos buscar mais informações sobre ele?",
+        "sprite": "neko.png",
         "background": "foto-mesa.png",
         "speed": 30
     },{
@@ -77,15 +77,15 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Acho que vale a pena a tentativa, vou buscar na tabela de Pessoas quais registros possuem o mesmo sobrenome do cirurgião.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
         "index": 9,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Eu me lembro de ter visto pessoas com o mesmo sobrenome de relance quando buscamos por todas as linhas. Mas vamos fazer uma consulta mais específica agora.",
-        "sprite": "rascunho-cat.png",
+        "text": "Tem como checar isso consultando todos os valores como fizemos antes, mas vamos fazer uma consulta mais específica agora.",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -93,7 +93,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Usaremos o operador LIKE, que é usado em uma cláusula WHERE para procurar por um padrão especificado em uma coluna. No caso, todos os registros que possuem o sobrenome do doutor.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -102,7 +102,7 @@
 	    "ex": 2,
         "name": "Neko",
         "text": "Se não me falha a memória, o nome dele era David Williams. Execute o seguinte comando: SELECT * FROM Pessoas WHERE nome LIKE ‘%Williams’;",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -110,7 +110,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Deu certo, todos os nomes que apareceram terminam com “Williams”. Mas o que exatamente significa esse símbolo?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -118,7 +118,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "O símbolo “%” indica que qualquer caractere pode estar presente naquela posição do texto.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -126,7 +126,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Ele é útil para encontrar valores que correspondam a padrões específicos, mesmo que não saiba exatamente quais caracteres existirão em determinadas posições.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -134,7 +134,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "No caso dessa consulta, eu quero nomes que terminam com “Williams”. O nome que estiver antes disso pode ser qualquer um.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -142,7 +142,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Que interessante, procurar os nomes que precisamos dessa maneira foi moleza.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -150,7 +150,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Oh, parece que temos um problema. Existem três registros além do doutor com esse sobrenome.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -158,7 +158,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Bem, isso é um problema. Ambas estão classificadas como não sendo funcionárias e as datas de nascimento são bem próximas. Realmente não tem como saber apenas olhando aqui.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -167,7 +167,7 @@
 	    "ex": 3,
         "name": "Mei",
         "text": "Vou continuar procurando por mais informações, começando por essa tabela que eu não olhei ainda. (Execute um SELECT na tabela “Relacao”).",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -175,7 +175,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Não parece ter nada de útil aqui além de alguns números.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -183,7 +183,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Espere, na verdade é exatamente o que estamos procurando. Essa tabela guarda as relações entre as pessoas que estão cadastradas aqui.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -191,7 +191,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Os números da coluna “funcionario_id” e “pessoa_id” são chaves primárias de registros da tabela “Pessoas”, mas quando estão em outra tabela se tornam chaves estrangeiras.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -199,7 +199,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "E o que é uma chave estrangeira?",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -207,7 +207,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Chave estrangeira é um campo de uma tabela que estabelece uma relação entre duas tabelas, usando o identificador (chave primária) dessa outra tabela.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -215,7 +215,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Chave estrangeira é um campo de uma tabela que estabelece uma relação entre duas tabelas, usando o identificador (chave primária) dessa outra tabela.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -223,7 +223,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Isso permite a criação de relacionamentos entre tabelas, por esse motivo o banco de dados que estamos realizando os comandos é chamado de Banco de Dados Relacional.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -231,7 +231,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Uau, faz sentido!",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -239,7 +239,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Pensando por esse lado, o registro com a descrição “Filha” pode estar relacionado ao cirurgião e a filha dele. Se fizermos uma consulta buscando pelo “id” de ambos, teremos certeza da relação entre eles.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -247,7 +247,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Correto! Como você acertou meu raciocínio, pode fazer as honras de fazer a consulta.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -255,7 +255,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Mas eu já estava realizando todas as consultas de qualquer forma...",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -263,7 +263,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Yohoho! É verdade.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -271,7 +271,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "...",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -279,7 +279,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Mas antes, vou te ensinar uma coisa. Lembra de quando te ensinei sobre o operador AND? Caso se esqueça de algo, pode olhar o menu de Ajuda sempre que quiser.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -287,7 +287,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Lembro, mas não pretendia usar esse comando, pois quero buscar por apenas um identificador por vez.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -295,7 +295,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Por isso vou te mostrar um operador que também é usado junto com a cláusula WHERE.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -303,7 +303,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Com o operador AND, o registro precisa atender a todas as condições fornecidas para que apareça nos resultados.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -311,7 +311,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Em contrapartida, existe o operador OR. Ele exige que o registro atenda a pelo menos uma das condições especificadas para aparecer no resultado da consulta, ao invés de todas.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -319,7 +319,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Isso é ótimo! Dessa forma não preciso fazer duas consultas para buscar pelos dois “id” da relação.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -327,7 +327,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Vou dar um exemplo utilizando a coluna “profissao” da tabela “Pessoas”. Imagine que eu queira que apareça tanto cirurgiões quanto engenheiros no meu resultado.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -336,7 +336,7 @@
 	    "ex": 4,
         "name": "Neko",
         "text": "Execute o seguinte comando: SELECT * FROM Pessoas WHERE profissao = ‘Cirurgião’ OR profissao = ‘Engenheiro’;",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -344,7 +344,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Observe que apareceram registros com as duas profissões. Agora tente fazer isso com a coluna “id” da tabela “Pessoas”, utilizando os mesmos valores da relação que conseguimos anteriormente.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -353,7 +353,7 @@
 	    "ex": 5,
         "name": "Mei",
         "text": "(Certo, vou executar um SELECT na tabela Pessoas, buscando pelo “id” 1094 OU 1097)",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -361,7 +361,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "Pronto! Consegui confirmar que ele realmente tem uma filha. Seu nome é Isabella.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -369,7 +369,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Mandou bem! Sabia que conseguiria.",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -377,7 +377,7 @@
         "type": "dialogue",
         "name": "Neko",
         "text": "Agora, vamos colocar a senha e sair daqui. Estou começando a ficar entediado, mesmo que eu seja uma inteligência artificial. Yohoho!",
-        "sprite": "rascunho-cat.png",
+        "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -385,7 +385,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "... Certo. Espero que seja mesmo a senha correta dessa vez.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
     },{
@@ -394,7 +394,7 @@
 	    "ex": 6,
         "name": "Mei",
         "text": "Vou atualizar a fechadura para a data de nascimento de Isabella. O valor novo será ‘12072036’.",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "saida.png",
         "speed": 30
     },{
@@ -410,7 +410,7 @@
         "type": "dialogue",
         "name": "Mei",
         "text": "...! Abriu!",
-        "sprite": "rascunho-mei.png",
+        "sprite": "mei.png",
         "background": "saida.png",
         "speed": 30
     },{
