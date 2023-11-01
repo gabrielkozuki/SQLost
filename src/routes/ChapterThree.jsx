@@ -104,7 +104,7 @@ const ChapterThree = () => {
 				case 3:
 					if (res.columns.length == 4 && res.values.length == 3) {
 						if (res.columns[0] == 'id' && res.columns[1] == 'descricao' && res.columns[2] == 'funcionario_id' && res.columns[3] == 'pessoa_id') {
-							if (res.values[0][0] == 1094 && res.values[1][0] == 1096 && res.values[2][0] == 1097) {
+							if (res.values[0][0] == 62 && res.values[1][0] == 87 && res.values[2][0] == 21) {
 								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
 								setFlow(flow + 1)
 								break;
@@ -130,7 +130,7 @@ const ChapterThree = () => {
 					break;
 
 				case 5:
-					if (res.columns.length == 5 && res.values.length == 3) {
+					if (res.columns.length == 5 && res.values.length == 2) {
 						if (res.columns[0] == 'id' && res.columns[1] == 'nome' && res.columns[2] == 'data_nascimento' && res.columns[3] == 'profissao' && res.columns[4] == 'is_funcionario') {
 							if ((res.values[0][0] == 1094 && res.values[1][0] == 1097) || (res.values[0][0] == 1097 && res.values[1][0] == 1094)) {
 								arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
@@ -144,19 +144,18 @@ const ChapterThree = () => {
 					break;
 
 				case 6:
-					// corrigir mensagem de erro
-					if (!res.length > 0) {
-						if (!(res.props.children[0].toLowerCase().includes('erro'))) {
-							arr.push(<p className="console-success" key={arr.length}>Ok!</p>)
-							setFlow(flow + 1)
-							break;
+					if (res != undefined) {
+						if (!Object.hasOwn(res, 'columns') && !Object.hasOwn(res, 'values')) {
+							if (res.props.children[0].toLowerCase().includes('erro')) {
+								arr.push(<p className="console-fail" key={arr.length}>Verifique se os valores estão sendo atualizados corretamente.</p>)
+							}
 						} else {
-							arr.push(<p className="console-fail" key={arr.length}>Verifique se os valores estão sendo atualizados corretamente.</p>)
-							break
+							arr.push(<p className="console-fail" key={arr.length}>O resultado está retornando uma tabela, é esperado um comando do tipo UPDATE.</p>)
 						}
+					} else if (consoleComponents.slice(-1)[0].props.children == 'Comando executado com sucesso!') {
+						setFlow(flow + 1)
 					}
 
-					arr.push(<p className="console-fail" key={arr.length}>O resultado está retornando uma tabela.</p>)
 					break;
 			}
 

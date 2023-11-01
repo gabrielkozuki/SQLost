@@ -126,20 +126,13 @@ function Help() {
 
                 <div className="row" onClick={() => handleCollapse(6)}>
                     <i className={`fa-solid fa-angle-right ${showCollapse[6] ? 'fa-rotate-90' : ''}`}></i>
-                    Operadores condicionais
+                    Operadores condicionais (AND, OR)
                 </div>
                 <Collapse transition={`height 290ms cubic-bezier(.4, 0, .2, 1)`} isOpen={showCollapse[6]}>
                     <div className="content-collapse">
                         <p>Condições são expressões que você usa na cláusula WHERE para especificar critérios que determinam quais linhas da tabela devem ser incluídas no resultado da consulta.</p>
                         <p>As condições são construídas com base em operadores e valores, e elas ajudam a filtrar os dados com base em regras específicas. Alguns dos operadores mais comuns são:</p>
                         <br />
-                        <p><span style={{textDecoration: 'underline', textDecorationThickness: '2px'}}>Operadores de comparação</span>: são usados para comparar valores e criar condições. Alguns operadores comuns incluem:</p>
-                        <ul>
-                            <li>‘=’ (igual): verifica se dois valores são iguais</li>
-                            <li>‘!=’ (diferente): verifica se dois valores são diferentes</li>
-                            <li>‘&lt;’ (menor que): verifica se o valor à esquerda é menor que o valor à direita</li>
-                            <li>‘&gt;’ (maior que): verifica se o valor à esquerda é maior que o valor à direita    </li>
-                        </ul>
                         <p><span style={{textDecoration: 'underline', textDecorationThickness: '2px'}}>Operadores lógicos</span>: são usados para combinar condições. Os operadores lógicos mais comuns incluem:</p>
                         <ul>
                             <li>‘AND’ (E): retorna verdadeiro se todas as condições forem verdadeiras;</li>
@@ -152,6 +145,14 @@ function Help() {
                             &nbsp;&nbsp;<span className='sql-command'>AND</span> coluna_y &gt; valor_z <br />
                             &nbsp;&nbsp;<span className='sql-command'>AND</span> coluna_z != valor_qualquer;
                         </div>
+                        <br />
+                        <p><span style={{textDecoration: 'underline', textDecorationThickness: '2px'}}>Operadores de comparação</span>: são usados para comparar valores e criar condições. Alguns operadores comuns incluem:</p>
+                        <ul>
+                            <li>‘=’ (igual): verifica se dois valores são iguais</li>
+                            <li>‘!=’ (diferente): verifica se dois valores são diferentes</li>
+                            <li>‘&lt;’ (menor que): verifica se o valor à esquerda é menor que o valor à direita</li>
+                            <li>‘&gt;’ (maior que): verifica se o valor à esquerda é maior que o valor à direita    </li>
+                        </ul>
                     </div>
                 </Collapse>
 
