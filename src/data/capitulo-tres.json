@@ -238,7 +238,15 @@
         "index": 28,
         "type": "dialogue",
         "name": "Mei",
-        "text": "Pensando por esse lado, o registro com a descrição “Filha” pode estar relacionado ao cirurgião e a filha dele. Se fizermos uma consulta buscando pelo “id” de ambos, teremos certeza da relação entre eles.",
+        "text": "Pensando por esse lado, o registro com a descrição “Filha” pode estar relacionado ao cirurgião e a filha dele.",
+        "sprite": "mei.png",
+        "background": "sala-cirurgia.png",
+        "speed": 30
+    },{
+        "index": 28,
+        "type": "dialogue",
+        "name": "Mei",
+        "text": "Se fizermos uma consulta buscando pelo “id” de ambos e os resultados baterem, teremos certeza da relação entre eles.",
         "sprite": "mei.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -294,7 +302,7 @@
         "index": 35,
         "type": "dialogue",
         "name": "Neko",
-        "text": "Por isso vou te mostrar um operador que também é usado junto com a cláusula WHERE.",
+        "text": "Certo, por isso vou te mostrar um operador que também é usado junto com a cláusula WHERE.",
         "sprite": "neko.png",
         "background": "sala-cirurgia.png",
         "speed": 30
@@ -401,7 +409,7 @@
         "index": 48,
         "type": "dialogue",
         "name": "",
-        "text": "A fechadura eletrônica faz um som, e então Mei tenta abrir a porta...",
+        "text": "A fechadura eletrônica faz um som, e então Mei tenta abrir a porta novamente...",
         "sprite": "",
         "background": "saida.png",
         "speed": 30
@@ -419,13 +427,13 @@
         "name": "",
         "text": "Depois de muito esforço, Mei finalmente consegue sair da sala onde acordou e aprendeu mais sobre suas novas capacidades.",
         "sprite": "",
-        "background": "black-screen.png",
+        "background": "saida.png",
         "speed": 30
     },{
         "index": 51,
         "type": "dialogue",
         "name": "",
-        "text": "Ela avança com cautela, ciente de que as respostas que busca residem nas sombras do desconhecido. Mas sua curiosidade a enche de determinação.",
+        "text": "Ela avança, mesmo sem saber o que esperar pela frente. Mas sua curiosidade a enche de determinação.",
         "sprite": "",
         "background": "black-screen.png",
         "speed": 30
