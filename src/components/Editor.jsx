@@ -15,7 +15,7 @@ const Editor = ({ script, type, consoleComponents, setConsoleComponents, handleE
             try {
                 console.log("Iniciando a criação do banco de dados...");
                 const SQL = await initSqlJs({
-                    locateFile: (file) => `/wasm/${file}`,
+                    locateFile: (file) => `https://sql.js.org/dist/${file}`,
                 });
                 const database = new SQL.Database();
                 console.log("Banco de dados criado com sucesso:", database);
